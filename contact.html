@@ -3,58 +3,75 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contact — Dr. Gábor Majoros</title>
-  <meta name="description" content="Contact Dr. Gábor Majoros — privacy, AI governance, and regulatory risk." />
+  <title>Contact &mdash; Dr. G&aacute;bor Majoros</title>
+  <meta name="description" content="Contact Dr. G&aacute;bor Majoros for professional inquiries." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
-<body>
+<body class="page">
+
   <header class="site-header">
-    <nav class="nav-inner">
-      <a href="index.html" class="nav-brand">Dr. Gábor Majoros</a>
-      <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="profile.html">Profile</a></li>
-        <li><a href="areas-of-focus.html">Areas of Focus</a></li>
-        <li><a href="track-record.html">Track Record</a></li>
-        <li><a href="perspective.html">Perspective</a></li>
-        <li><a href="ai-governance.html">AI Governance</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-  <main>
-    <section class="section">
-      <div class="container">
-        <span class="eyebrow fade-in">Contact</span>
-        <h1 class="page-title fade-in">Get in touch.</h1>
-        <p class="body-text fade-in">For professional inquiries:</p>
-      </div>
-    </section>
-    <hr class="divider" />
-    <section class="section">
-      <div class="container">
-        <a href="mailto:gabor@majorosgabor.com" class="contact-email fade-in">gabor@majorosgabor.com</a>
-        <p class="body-text fade-in" style="margin-top:2.5rem">Available for selected discussions and professional engagements.</p>
-      </div>
-    </section>
-  </main>
-  <footer class="site-footer">
-    <div class="container">
-      <div class="footer-inner">
-        <div>
-          <p class="footer-name">Dr. Gábor Majoros</p>
-          <p class="footer-sub">Privacy, AI, and regulatory risk</p>
+    <nav class="nav-shell">
+      <a href="index.html" class="brand">Dr. G&aacute;bor Majoros</a>
+      <div class="nav-right">
+        <div class="nav-links">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="profile.html" class="nav-link">Profile</a>
+          <a href="areas-of-focus.html" class="nav-link">Areas of Focus</a>
+          <a href="track-record.html" class="nav-link">Track Record</a>
+          <a href="perspective.html" class="nav-link">Perspective</a>
+          <a href="ai-governance.html" class="nav-link">AI Governance</a>
+          <a href="contact.html" class="nav-link">Contact</a>
         </div>
-        <p class="footer-email"><a href="mailto:gabor@majorosgabor.com">gabor@majorosgabor.com</a></p>
+        <button class="menu-button" aria-label="Open menu" aria-expanded="false">&#9776;</button>
+      </div>
+    </nav>
+    <div class="mobile-menu">
+      <div class="mobile-menu-inner">
+        <a href="index.html" class="mobile-link">Home</a>
+        <a href="profile.html" class="mobile-link">Profile</a>
+        <a href="areas-of-focus.html" class="mobile-link">Areas of Focus</a>
+        <a href="track-record.html" class="mobile-link">Track Record</a>
+        <a href="perspective.html" class="mobile-link">Perspective</a>
+        <a href="ai-governance.html" class="mobile-link">AI Governance</a>
+        <a href="contact.html" class="mobile-link">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="section">
+      <div class="container">
+        <div class="page-title-block">
+          <p class="eyebrow reveal">Contact</p>
+          <h1 class="page-title reveal">Get in touch.</h1>
+        </div>
+        <p class="body body-soft reveal">For professional inquiries:</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <a href="mailto:gabor@majorosgabor.com" class="hero-tagline reveal" style="display:inline-block; font-size:clamp(1.6rem,4vw,2.6rem);">gabor@majorosgabor.com</a>
+        <p class="body body-soft reveal" style="margin-top:34px">Available for selected discussions and professional engagements.</p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <p class="footer-title">Dr. G&aacute;bor Majoros</p>
+        <p class="footer-text">Privacy, AI, and regulatory risk</p>
+        <p class="footer-text"><a href="mailto:gabor@majorosgabor.com">gabor@majorosgabor.com</a></p>
       </div>
     </div>
   </footer>
+
   <script src="script.js"></script>
 </body>
 </html>

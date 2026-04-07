@@ -10,117 +10,109 @@
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
-<body>
+<body class="page">
 
   <header class="site-header">
-    <nav class="nav-inner">
-      <a href="index.html" class="nav-brand">Dr. Gábor Majoros</a>
-      <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="profile.html">Profile</a></li>
-        <li><a href="areas-of-focus.html">Areas of Focus</a></li>
-        <li><a href="track-record.html">Track Record</a></li>
-        <li><a href="perspective.html">Perspective</a></li>
-        <li><a href="ai-governance.html">AI Governance</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
+    <nav class="nav-shell">
+      <a href="index.html" class="brand">Dr. Gábor Majoros</a>
+      <div class="nav-right">
+        <div class="nav-links">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="profile.html" class="nav-link">Profile</a>
+          <a href="areas-of-focus.html" class="nav-link">Areas of Focus</a>
+          <a href="track-record.html" class="nav-link">Track Record</a>
+          <a href="perspective.html" class="nav-link">Perspective</a>
+          <a href="ai-governance.html" class="nav-link">AI Governance</a>
+          <a href="contact.html" class="nav-link">Contact</a>
+        </div>
+        <button class="menu-button" aria-label="Open menu" aria-expanded="false">&#9776;</button>
+      </div>
     </nav>
+    <div class="mobile-menu">
+      <div class="mobile-menu-inner">
+        <a href="index.html" class="mobile-link">Home</a>
+        <a href="profile.html" class="mobile-link">Profile</a>
+        <a href="areas-of-focus.html" class="mobile-link">Areas of Focus</a>
+        <a href="track-record.html" class="mobile-link">Track Record</a>
+        <a href="perspective.html" class="mobile-link">Perspective</a>
+        <a href="ai-governance.html" class="mobile-link">AI Governance</a>
+        <a href="contact.html" class="mobile-link">Contact</a>
+      </div>
+    </div>
   </header>
 
   <main>
 
     <!-- Hero -->
-    <section class="hero-section">
+    <section class="hero">
       <div class="container">
-        <h1 class="hero-name fade-in">
-          <span class="first">Dr. Gábor</span>
-          <span class="last">Majoros</span>
-        </h1>
-        <div class="hero-meta fade-in">
-          <span class="role">Global Data Protection Officer</span>
-          <span class="prev">Former Deloitte Consulting</span>
+        <div class="hero-grid">
+          <h1 class="hero-name reveal">
+            Dr. G&aacute;bor
+            <span class="muted">Majoros</span>
+          </h1>
+          <p class="hero-role reveal">Global Data Protection Officer</p>
+          <p class="hero-sub reveal">Former Deloitte Consulting</p>
+          <p class="hero-tagline reveal">AI governance, privacy, and regulatory risk &mdash; framed through executive decision-making and strategic accountability.</p>
         </div>
-        <p class="hero-tagline fade-in">AI governance, privacy, and regulatory risk — framed through executive decision-making and strategic accountability.</p>
       </div>
     </section>
 
-    <hr class="divider" />
-
-    <!-- Intro statement -->
+    <!-- Context -->
     <section class="section">
       <div class="container">
-        <span class="eyebrow fade-in">Context</span>
-        <p class="body-text fade-in">In complex organisations, privacy and AI governance are no longer compliance functions.</p>
-        <p class="body-text fade-in">They define how risk is understood, structured, and governed at executive level.</p>
-        <p class="body-text fade-in">Where regulatory expectation meets operational reality, the margin for error becomes strategic.</p>
+        <p class="eyebrow reveal">Context</p>
+        <p class="body-lg reveal">In complex organisations, privacy and AI governance are no longer compliance functions.</p>
+        <p class="body body-soft reveal">They define how risk is understood, structured, and governed at executive level. Where regulatory expectation meets operational reality, the margin for error becomes strategic.</p>
       </div>
     </section>
-
-    <hr class="divider" />
 
     <!-- Positioning -->
     <section class="section">
       <div class="container">
-        <span class="eyebrow fade-in">Positioning</span>
-        <p class="body-text fade-in">This profile reflects work conducted at the intersection of law, governance, and decision-making.</p>
-        <p class="body-text fade-in">Not as compliance support — but as an executive capability.</p>
+        <p class="eyebrow reveal">Positioning</p>
+        <p class="body-lg reveal">This profile reflects work conducted at the intersection of law, governance, and decision-making.</p>
+        <p class="body body-soft reveal">Not as compliance support &mdash; but as an executive capability.</p>
       </div>
     </section>
 
-    <hr class="divider" />
-
-    <!-- Selected Sections -->
-    <section class="section">
+    <!-- Selected sections -->
+    <section class="section section-soft">
       <div class="container">
-        <span class="eyebrow fade-in">Selected Sections</span>
-        <ul class="section-links fade-in">
-          <li>
-            <a href="profile.html">
-              Profile
-              <span class="arrow">→</span>
-            </a>
-          </li>
-          <li>
-            <a href="areas-of-focus.html">
-              Areas of Focus
-              <span class="arrow">→</span>
-            </a>
-          </li>
-          <li>
-            <a href="track-record.html">
-              Track Record
-              <span class="arrow">→</span>
-            </a>
-          </li>
-          <li>
-            <a href="perspective.html">
-              Perspective
-              <span class="arrow">→</span>
-            </a>
-          </li>
-          <li>
-            <a href="ai-governance.html">
-              AI Governance
-              <span class="arrow">→</span>
-            </a>
-          </li>
-        </ul>
+        <p class="eyebrow reveal">Selected Sections</p>
+        <div class="preview-links reveal">
+          <a href="profile.html" class="preview-link">
+            <span class="preview-link-title">Profile</span>
+            <span class="preview-link-text">Background, core capability, and professional context.</span>
+          </a>
+          <a href="areas-of-focus.html" class="preview-link">
+            <span class="preview-link-title">Areas of Focus</span>
+            <span class="preview-link-text">Six areas of professional depth, from AI governance to board advisory.</span>
+          </a>
+          <a href="track-record.html" class="preview-link">
+            <span class="preview-link-title">Track Record</span>
+            <span class="preview-link-text">Experience, regulatory scope, and credentials.</span>
+          </a>
+          <a href="perspective.html" class="preview-link">
+            <span class="preview-link-title">Perspective</span>
+            <span class="preview-link-text">A structural view on privacy and AI governance.</span>
+          </a>
+          <a href="ai-governance.html" class="preview-link">
+            <span class="preview-link-title">AI Governance</span>
+            <span class="preview-link-text">Accountability, risk, and executive judgment in AI.</span>
+          </a>
+        </div>
       </div>
     </section>
 
   </main>
 
-  <footer class="site-footer">
+  <footer class="footer">
     <div class="container">
-      <div class="footer-inner">
-        <div>
-          <p class="footer-name">Dr. Gábor Majoros</p>
-          <p class="footer-sub">Privacy, AI, and regulatory risk</p>
-        </div>
-        <p class="footer-email"><a href="mailto:gabor@majorosgabor.com">gabor@majorosgabor.com</a></p>
+      <div class="footer-grid">
+        <p class="footer-title">Dr. G&aacute;bor Majoros</p>
+        <p class="footer-text">Privacy, AI, and regulatory risk</p>
+        <p class="footer-text"><a href="mailto:gabor@majorosgabor.com">gabor@majorosgabor.com</a></p>
       </div>
     </div>
   </footer>

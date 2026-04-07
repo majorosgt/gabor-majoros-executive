@@ -3,68 +3,88 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Perspective — Dr. Gábor Majoros</title>
-  <meta name="description" content="A perspective on privacy, AI governance, and executive accountability — Dr. Gábor Majoros." />
+  <title>Perspective &mdash; Dr. G&aacute;bor Majoros</title>
+  <meta name="description" content="A structural view on privacy, AI governance, and executive accountability." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
-<body>
+<body class="page">
+
   <header class="site-header">
-    <nav class="nav-inner">
-      <a href="index.html" class="nav-brand">Dr. Gábor Majoros</a>
-      <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="profile.html">Profile</a></li>
-        <li><a href="areas-of-focus.html">Areas of Focus</a></li>
-        <li><a href="track-record.html">Track Record</a></li>
-        <li><a href="perspective.html">Perspective</a></li>
-        <li><a href="ai-governance.html">AI Governance</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-  <main>
-    <section class="section">
-      <div class="container">
-        <span class="eyebrow fade-in">Perspective</span>
-        <h1 class="page-title fade-in">A structural view of privacy and governance.</h1>
-      </div>
-    </section>
-    <hr class="divider" />
-    <section class="section">
-      <div class="container">
-        <p class="body-text fade-in">Privacy is often framed as a compliance discipline.</p>
-        <p class="body-text fade-in">In reality, it is a structural function of modern organisations — defining how risk is understood, distributed, and governed.</p>
-        <p class="body-text fade-in">AI governance amplifies this shift.</p>
-        <p class="body-text fade-in">The challenge is no longer regulatory interpretation alone, but the ability to build systems that remain defensible under scrutiny, while still enabling operational effectiveness.</p>
-      </div>
-    </section>
-    <hr class="divider" />
-    <section class="section">
-      <div class="container">
-        <p class="body-text fade-in">At executive level, the question is not:</p>
-        <blockquote class="perspective-quote fade-in">&ldquo;What does the regulation say?&rdquo;</blockquote>
-        <p class="body-text fade-in">But:</p>
-        <blockquote class="perspective-quote fade-in">&ldquo;What decision holds — when tested externally?&rdquo;</blockquote>
-      </div>
-    </section>
-  </main>
-  <footer class="site-footer">
-    <div class="container">
-      <div class="footer-inner">
-        <div>
-          <p class="footer-name">Dr. Gábor Majoros</p>
-          <p class="footer-sub">Privacy, AI, and regulatory risk</p>
+    <nav class="nav-shell">
+      <a href="index.html" class="brand">Dr. G&aacute;bor Majoros</a>
+      <div class="nav-right">
+        <div class="nav-links">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="profile.html" class="nav-link">Profile</a>
+          <a href="areas-of-focus.html" class="nav-link">Areas of Focus</a>
+          <a href="track-record.html" class="nav-link">Track Record</a>
+          <a href="perspective.html" class="nav-link">Perspective</a>
+          <a href="ai-governance.html" class="nav-link">AI Governance</a>
+          <a href="contact.html" class="nav-link">Contact</a>
         </div>
-        <p class="footer-email"><a href="mailto:gabor@majorosgabor.com">gabor@majorosgabor.com</a></p>
+        <button class="menu-button" aria-label="Open menu" aria-expanded="false">&#9776;</button>
+      </div>
+    </nav>
+    <div class="mobile-menu">
+      <div class="mobile-menu-inner">
+        <a href="index.html" class="mobile-link">Home</a>
+        <a href="profile.html" class="mobile-link">Profile</a>
+        <a href="areas-of-focus.html" class="mobile-link">Areas of Focus</a>
+        <a href="track-record.html" class="mobile-link">Track Record</a>
+        <a href="perspective.html" class="mobile-link">Perspective</a>
+        <a href="ai-governance.html" class="mobile-link">AI Governance</a>
+        <a href="contact.html" class="mobile-link">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="section">
+      <div class="container">
+        <div class="page-title-block">
+          <p class="eyebrow reveal">Perspective</p>
+          <h1 class="page-title reveal">A structural view of privacy and governance.</h1>
+        </div>
+        <p class="body body-soft reveal">Privacy is often framed as a compliance discipline.</p>
+        <p class="body body-soft reveal">In reality, it is a structural function of modern organisations &mdash; defining how risk is understood, distributed, and governed.</p>
+        <p class="body body-soft reveal">AI governance amplifies this shift.</p>
+        <p class="body body-soft reveal">The challenge is no longer regulatory interpretation alone, but the ability to build systems that remain defensible under scrutiny, while still enabling operational effectiveness.</p>
+      </div>
+    </section>
+
+    <section class="section section-deep">
+      <div class="container">
+        <p class="eyebrow reveal">The Executive Question</p>
+        <p class="quote-lg reveal">&ldquo;What decision holds &mdash; when tested externally?&rdquo;</p>
+        <p class="body body-soft reveal">At executive level, the question is not what the regulation says. It is whether the governance structure, the decision-making process, and the institutional posture will hold when scrutinised by regulators, boards, or the public.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <p class="eyebrow reveal">Implications</p>
+        <p class="body-lg reveal">This reframes the role of privacy and AI governance entirely.</p>
+        <p class="body body-soft reveal">Compliance asks whether requirements are met. Governance asks whether decisions are defensible &mdash; not only today, but when the environment shifts.</p>
+        <p class="body body-soft reveal">The organisations that navigate this well are those where accountability is clear, where risk is understood at the right level, and where governance structures have been built with that scrutiny in mind.</p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <p class="footer-title">Dr. G&aacute;bor Majoros</p>
+        <p class="footer-text">Privacy, AI, and regulatory risk</p>
+        <p class="footer-text"><a href="mailto:gabor@majorosgabor.com">gabor@majorosgabor.com</a></p>
       </div>
     </div>
   </footer>
+
   <script src="script.js"></script>
 </body>
 </html>

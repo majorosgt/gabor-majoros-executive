@@ -51,7 +51,6 @@ a:hover {
   opacity: 0.82;
 }
 
-/* ── Header / Nav ── */
 .site-header {
   position: sticky;
   top: 0;
@@ -153,21 +152,15 @@ a:hover {
 
 .mobile-link {
   color: var(--text-main);
-  display: block;
   padding: 10px 0;
   border-bottom: 1px solid rgba(216, 209, 199, 0.5);
   font-size: 0.98rem;
-}
-
-.mobile-link:last-child {
-  border-bottom: none;
 }
 
 .mobile-link.active {
   color: var(--accent);
 }
 
-/* ── Layout ── */
 .page {
   min-height: 100vh;
 }
@@ -232,7 +225,6 @@ a:hover {
   color: #d7e5ff;
 }
 
-/* ── Hero ── */
 .hero {
   padding: 88px 0 74px;
   position: relative;
@@ -288,7 +280,6 @@ a:hover {
   letter-spacing: -0.02em;
 }
 
-/* ── Typography ── */
 .eyebrow {
   font-size: 0.85rem;
   letter-spacing: 0.18em;
@@ -350,7 +341,6 @@ h3 {
   max-width: 840px;
 }
 
-/* ── Lists ── */
 .list-clean {
   list-style: none;
   padding: 0;
@@ -371,7 +361,6 @@ h3 {
   color: var(--accent);
 }
 
-/* ── Grid layouts ── */
 .split {
   display: grid;
   gap: 34px;
@@ -384,7 +373,6 @@ h3 {
   gap: 28px;
 }
 
-/* ── Preview links ── */
 .preview-links {
   display: grid;
   gap: 18px;
@@ -396,15 +384,10 @@ h3 {
   padding: 20px 0;
   border-top: 1px solid var(--line);
   color: var(--text-main);
-  transition: opacity 180ms ease;
 }
 
 .preview-link:last-child {
   border-bottom: 1px solid var(--line);
-}
-
-.preview-link:hover {
-  opacity: 0.75;
 }
 
 .preview-link-title {
@@ -422,7 +405,6 @@ h3 {
   max-width: 620px;
 }
 
-/* ── Inline panel ── */
 .inline-panel {
   padding: 30px 28px;
   border: 1px solid rgba(216, 209, 199, 0.9);
@@ -454,7 +436,6 @@ h3 {
   color: var(--text-soft);
 }
 
-/* ── Footer ── */
 .footer {
   border-top: 1px solid var(--line);
   padding: 34px 0 44px;
@@ -476,7 +457,6 @@ h3 {
   font-size: 0.96rem;
 }
 
-/* ── Reveal animation ── */
 .reveal {
   opacity: 0;
   transform: translateY(18px);
@@ -488,7 +468,6 @@ h3 {
   transform: translateY(0);
 }
 
-/* ── Page title block ── */
 .page-title-block {
   padding: 72px 0 30px;
 }
@@ -497,7 +476,6 @@ h3 {
   max-width: 760px;
 }
 
-/* ── Responsive ── */
 @media (min-width: 860px) {
   .split {
     grid-template-columns: 0.9fr 1.1fr;
@@ -557,13 +535,5 @@ h3 {
 
   .quote-lg {
     font-size: clamp(2rem, 8vw, 2.8rem);
-  }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .reveal {
-    opacity: 1;
-    transform: none;
-    transition: none;
   }
 }
