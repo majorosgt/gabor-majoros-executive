@@ -170,7 +170,9 @@ button { font: inherit; border: 0; background: none; color: inherit; cursor: poi
 
 /* ── Stat strip ── */
 .stat-strip {
-  display: flex; flex-wrap: wrap; gap: 3rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem 3rem;
   padding: 2.5rem 0; border-top: 1px solid var(--border);
 }
 .stat-item { display: grid; gap: .25rem; }
@@ -192,14 +194,6 @@ button { font: inherit; border: 0; background: none; color: inherit; cursor: poi
   color: var(--text); margin-bottom: clamp(1.25rem, 2.5vw, 2rem);
 }
 .hero-name span { display: block; }
-.name-prefix {
-  font-size: .42em;
-  color: var(--text-muted);
-  letter-spacing: -.01em;
-  margin-bottom: .18em;
-  line-height: 1;
-}
-.name-given  { color: var(--text); }
 .name-family { color: var(--text-muted); }
 .hero-rule { border: none; border-top: 1px solid var(--border); margin-bottom: clamp(1.75rem, 3.5vw, 2.75rem); }
 .hero-bottom { display: grid; gap: 2.5rem; }
@@ -366,6 +360,7 @@ button { font: inherit; border: 0; background: none; color: inherit; cursor: poi
   .menu-toggle { display: none; }
   .why-grid { grid-template-columns: 1fr 1fr; }
   .hero-bottom { grid-template-columns: 1fr 1fr; align-items: start; gap: 4rem; }
+  .stat-strip { grid-template-columns: repeat(4, 1fr); gap: 2rem; }
 }
 
 @media (max-width: 640px) {
