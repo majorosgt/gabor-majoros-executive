@@ -71,7 +71,7 @@
 
     <section class="section section-deep">
       <div class="container reveal">
-        <p class="quote-lg">"In the digital world, freedom is called privacy."</p>
+        <p class="quote-lg">“In the digital world, freedom is called privacy.”</p>
         <p class="eyebrow inverse">Personal guiding principle</p>
       </div>
     </section>
