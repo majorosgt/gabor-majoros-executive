@@ -36,7 +36,7 @@ function buildHeader() {
           <nav class="nav-links" aria-label="Primary navigation">
             ${desktopLinks}
           </nav>
-          <button class="menu-button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu" id="menuButton">&#9776;</button>
+          <button class="menu-button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu" id="menuButton">☰</button>
         </div>
       </div>
       <div class="mobile-menu" id="mobile-menu">
@@ -54,7 +54,7 @@ function buildHeader() {
     button.addEventListener("click", () => {
       const isOpen = mobileMenu.classList.toggle("open");
       button.setAttribute("aria-expanded", String(isOpen));
-      button.textContent = isOpen ? "\u2715" : "\u2630";
+      button.textContent = isOpen ? "✕" : "☰";
     });
   }
 }
