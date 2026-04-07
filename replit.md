@@ -1,45 +1,49 @@
 # Dr. Gábor Majoros — Executive Profile Website
 
 ## Overview
-Premium, minimalist single-page personal website for an executive-level privacy and AI governance expert. Editorial, board-level aesthetic — not a consulting business site.
+Premium minimalist multi-page personal website for a senior privacy, AI governance, and regulatory risk expert. Editorial, board-level aesthetic — not a consulting sales site.
 
 ## Architecture
-- **Single-page static site** — all content in `index.html`, fully self-contained (CSS and JS embedded)
+- **Static multi-page site** — plain HTML, shared `styles.css`, shared `script.js`
 - Served via `python3 -m http.server 5000 --bind 0.0.0.0`
-- Additional pages from previous multi-page iteration remain: `expertise.html`, `track-record.html`, `perspective.html`, `contact.html`, `styles.css`, `main.js` (not linked from main index)
+- No frameworks, no build tools, no dark mode
+
+## Files
+- `index.html` — Home / hero
+- `profile.html` — Professional background and core capability
+- `areas-of-focus.html` — Six areas of professional depth
+- `track-record.html` — Experience, credentials, scope
+- `perspective.html` — Editorial stance on privacy and AI governance
+- `ai-governance.html` — Deep-dive AI governance page
+- `contact.html` — Email only, no form
+- `styles.css` — All shared styles
+- `script.js` — Hamburger menu, active nav, fade-in on scroll
 
 ## Design System
-- **Background**: `#f8f7f4` (soft off-white)
+- **Background**: `#f8f7f4`
 - **Text**: `#1a1a1a`
 - **Muted**: `#5c5b58`
+- **Faint**: `#9a9895`
 - **Accent**: `#1f3a5f` (deep navy)
-- **Border**: `#e5e2db`
+- **Border/dividers**: `#dedad2`
 - **Serif**: Playfair Display (Google Fonts)
 - **Sans**: Inter (Google Fonts)
-- **Max width**: 720px
+- **Content max-width**: 760px
+- **Nav max-width**: 1100px
 
-## Pages
-- `index.html` — Main single-page profile
-- `ai-governance.html` — Standalone AI Governance deep-dive page (links back to index.html)
+## Navigation
+- Sticky header, left: brand name, right: 7 nav links
+- Active page highlighted with accent underline (set by script.js via pathname)
+- Mobile: hamburger opens vertical dropdown menu
 
-## Page Structure (index.html)
-1. Sticky minimal header — name + location, no nav
-2. Hero — Dr. Gábor / Majoros name block, role, tagline in italic accent
-3. Quote band — full-width dark navy with signature quote
-4. Executive Positioning — short strategic paragraph
-5. Career Context — 4 bullet points with dash rule
-6. Executive Focus — heading + 6 numbered expertise items (01–06)
-7. Industry Context — sector paragraph
-8. Education & Credentials — degrees + certification pills
-9. Contact — LinkedIn link, no form, no email
+## Global Footer
+- Name, sub-line "Privacy, AI, and regulatory risk"
+- Email: gabor@majorosgabor.com
 
 ## Tone & Rules
-- Executive, understated, authoritative — NOT consulting/services framing
-- No pricing, no CTAs, no "discuss an engagement" language
+- Executive, understated, authoritative — no consulting/sales framing
+- No pricing, no CTAs, no forms
+- No dark mode, no cards, no icons (except minimal)
 - English only
-- No dark mode toggle on this version
-- "Dr." and given name always at the same typographic size
-- Smooth scroll + IntersectionObserver fade-in reveals
-
-## LinkedIn
-https://www.linkedin.com/in/majorosgt/
+- Smooth IntersectionObserver fade-in on scroll
+- `fade-in` → `visible` class pattern

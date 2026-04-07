@@ -1,0 +1,391 @@
+Build a complete static multi-page personal website in plain HTML, CSS, and vanilla JavaScript.
+
+Important:
+- Do not ask follow-up questions.
+- Make reasonable implementation choices yourself.
+- Generate all required files directly.
+- Use a clean multi-page structure, not React, not Next.js, not Tailwind, not a framework.
+- The website must run locally by opening index.html or via Replit static hosting.
+- Create all pages and link them together with a working navigation.
+- Make the mobile navigation fully functional with a hamburger menu.
+- Use only these files:
+  - index.html
+  - profile.html
+  - areas-of-focus.html
+  - track-record.html
+  - perspective.html
+  - ai-governance.html
+  - contact.html
+  - styles.css
+  - script.js
+
+Website purpose:
+This is an executive personal profile website for a senior privacy, AI governance, and regulatory risk expert.
+It must NOT feel like a consulting sales website.
+It must feel premium, restrained, intelligent, editorial, and executive-level.
+No aggressive calls to action.
+No “hire me now” language.
+No marketing gimmicks.
+No pricing.
+No contact form.
+Only quiet authority.
+
+Design direction:
+- Premium minimalist editorial style
+- Soft off-white background: #f8f7f4
+- Primary text color: #1a1a1a
+- Accent color: #1f3a5f
+- Thin divider lines: #dedad2
+- Serif font for headings: Playfair Display
+- Sans-serif font for body: Inter
+- Maximum content width: 760px
+- Large whitespace and elegant spacing
+- Fully responsive mobile-first layout
+- Sticky top navigation
+- Hamburger menu on mobile
+- Smooth fade-in animation on scroll
+- Subtle hover states on navigation links
+- No cards unless absolutely necessary
+- No bright colors
+- No stock images
+- No icons unless minimal and necessary
+- No dark mode
+- No blog layout
+- No sidebar
+
+Global header:
+- Left side: “Dr. Gábor Majoros”
+- Right side desktop menu with links:
+  Home
+  Profile
+  Areas of Focus
+  Track Record
+  Perspective
+  AI Governance
+  Contact
+- On mobile: hamburger icon opens vertical menu
+- Header should appear on every page
+- Highlight current page in navigation
+
+Global footer:
+- Minimal footer on every page
+- Include:
+  Dr. Gábor Majoros
+  Privacy, AI, and regulatory risk
+  Email: gabor@majorosgabor.com
+- Add a thin top border
+- Keep footer understated
+
+Content requirements by page:
+
+1) index.html
+This is the home page.
+Structure:
+- Hero section
+- Intro statement
+- Short positioning section
+- Short preview links to Profile, Areas of Focus, Track Record, Perspective, and AI Governance
+- Footer
+
+Use exactly this text for the hero:
+Dr. Gábor Majoros
+
+Global Data Protection Officer
+Former Deloitte Consulting
+
+AI governance, privacy, and regulatory risk —
+framed through executive decision-making and strategic accountability.
+
+Use this intro text:
+In complex organisations, privacy and AI governance are no longer compliance functions.
+
+They define how risk is understood, structured, and governed at executive level.
+
+Where regulatory expectation meets operational reality, the margin for error becomes strategic.
+
+Use this positioning text:
+This profile reflects work conducted at the intersection of law, governance, and decision-making.
+
+Not as compliance support — but as an executive capability.
+
+Add a short section titled “Selected Sections” with elegant text links to:
+Profile
+Areas of Focus
+Track Record
+Perspective
+AI Governance
+
+2) profile.html
+Title: Profile
+
+Use this content:
+Dr. Gábor Majoros is a senior expert in privacy, AI governance, and regulatory strategy, with over 15 years of international experience across consulting, legal advisory, and executive leadership.
+
+His background combines Deloitte Consulting with extensive in-house experience as Global Data Protection Officer, operating at the intersection of governance, risk, and strategic decision-making.
+
+His work focuses on translating complex regulatory frameworks into governance structures that remain operationally viable and defensible under scrutiny.
+
+Add a subsection titled:
+Professional Background
+
+Use these lines:
+– Deloitte Consulting (legal and privacy advisory)
+– Global Data Protection Officer (7+ years)
+– Board-level reporting and executive advisory
+– International scope: Europe, Americas, Asia
+
+Add another subsection titled:
+Core Capability
+
+Use this text:
+The defining capability is not legal interpretation alone, but the ability to operate where:
+
+– regulatory complexity meets operational constraint
+– governance meets execution
+– and decisions must hold under regulatory and reputational pressure
+
+At this level, clarity, structure, and judgment become more critical than volume.
+
+3) areas-of-focus.html
+Title: Areas of Focus
+
+Add the following sections with clear typography and elegant spacing.
+
+Section title:
+AI Governance & AI Act
+Text:
+AI governance introduces a new class of enterprise risk.
+
+This work focuses on structuring governance models aligned with the EU AI Act and emerging global frameworks, including risk classification, accountability structures, and executive oversight.
+
+The objective is not compliance alone — but strategic risk alignment and defensibility.
+
+Section title:
+Privacy Strategy & Operating Model
+Text:
+Privacy programs require alignment between legal expectation, operational execution, and risk ownership.
+
+Designing scalable operating models ensures that governance is embedded into decision-making, rather than existing as a parallel compliance layer.
+
+Section title:
+Cross-Border Regulatory Complexity
+Text:
+Cross-border operations introduce compounded regulatory risk.
+
+This work focuses on governance architectures that maintain coherence where legal frameworks diverge and operational alignment becomes critical.
+
+Section title:
+Authority-Facing Matters
+Text:
+Regulatory engagement is inherently strategic.
+
+Positioning, narrative, and timing define outcomes alongside legal analysis, particularly in high-scrutiny environments.
+
+Section title:
+Contentious Privacy Matters
+Text:
+In high-risk scenarios, privacy becomes a question of institutional posture.
+
+Aligning legal argument, governance structures, and organisational credibility is essential.
+
+Section title:
+Board & Executive Governance
+Text:
+At executive level, privacy and AI are not compliance topics.
+
+They are strategic risk decisions.
+
+The role is to translate regulatory complexity into structured judgment that supports accountable decision-making.
+
+4) track-record.html
+Title: Track Record
+
+Use this intro text:
+Professional experience shaped across consulting, legal advisory, and international executive leadership.
+
+Add subsection:
+Professional Experience
+
+Use:
+Global Data Protection Officer
+Leading privacy governance across international operations, including regulatory strategy, organisational alignment, and executive reporting.
+
+Deloitte Consulting
+Legal and privacy advisory within complex regulatory environments, supporting multinational organisations.
+
+Earlier Legal Experience
+Foundation in European legal frameworks, with focus on business law, regulatory interpretation, and cross-border considerations.
+
+Add subsection:
+Executive Exposure
+
+Use:
+– Board-level reporting and strategic advisory
+– Direct interaction with executive leadership
+– Responsibility for enterprise-level privacy governance
+
+Add subsection:
+Regulatory & Operational Scope
+
+Use:
+– Multi-jurisdictional operations (EU, UK, global)
+– Cross-border data governance and regulatory alignment
+– Interaction with supervisory authorities
+– Incident response and regulatory positioning
+
+Add subsection:
+Areas of Impact
+
+Use:
+– Design of global privacy frameworks
+– Governance models aligned with regulatory expectations
+– Executive-level decision support
+– AI governance and emerging regulatory alignment
+
+Add subsection:
+Credentials
+
+Use:
+Doctor of Law — Pázmány Péter Catholic University
+Postgraduate specialisation in Privacy and Security Law
+European Business Law degree
+CIPP/E · CIPM · EPCG (Maastricht)
+
+5) perspective.html
+Title: Perspective
+
+Use this content:
+Privacy is often framed as a compliance discipline.
+
+In reality, it is a structural function of modern organisations — defining how risk is understood, distributed, and governed.
+
+AI governance amplifies this shift.
+
+The challenge is no longer regulatory interpretation alone, but the ability to build systems that remain defensible under scrutiny, while still enabling operational effectiveness.
+
+At executive level, the question is not:
+
+“What does the regulation say?”
+
+But:
+
+“What decision holds — when tested externally?”
+
+6) ai-governance.html
+Title: AI Governance
+
+Hero text:
+AI governance is no longer a technical discipline.
+
+It is a question of accountability, risk, and executive judgment.
+
+Opening text:
+Artificial intelligence introduces a new category of organisational exposure.
+
+Unlike traditional systems, AI operates with a level of autonomy, opacity, and scale that fundamentally challenges existing governance models.
+
+As regulatory frameworks such as the EU AI Act emerge, the question is no longer whether organisations use AI — but whether they can govern it.
+
+Add section:
+Core Positioning
+Text:
+AI governance is not an extension of compliance.
+
+It is a structural function of risk management, requiring alignment between legal interpretation, technical reality, and executive oversight.
+
+At this level, governance must do more than document — it must hold under scrutiny.
+
+Add section:
+What Defines Effective AI Governance
+Text:
+Effective AI governance is defined by structure, not policy volume.
+
+It requires:
+– clear classification of AI systems and associated risk
+– defined accountability across business and technical functions
+– alignment between regulatory expectations and operational capability
+– executive visibility into exposure and decision points
+
+Add section:
+Areas of Work
+
+Subsection:
+AI Act Readiness
+Preparing organisations for compliance with the EU AI Act and emerging global regulatory frameworks.
+
+Including system classification, risk mapping, and governance structures aligned with regulatory expectations.
+
+Subsection:
+AI Risk Governance Models
+Designing governance architectures that define ownership, decision rights, and accountability for AI systems.
+
+Ensuring that risk is not only identified, but structurally managed across the organisation.
+
+Subsection:
+AI System Inventory & Classification
+Establishing visibility over AI usage across the organisation.
+
+Mapping systems against regulatory categories, including high-risk AI and prohibited use cases.
+
+Subsection:
+Accountability & Oversight
+Defining governance layers that connect technical teams, legal functions, and executive leadership.
+
+Ensuring that AI-related decisions are traceable, defensible, and aligned with organisational risk appetite.
+
+Subsection:
+Regulatory Positioning
+Supporting organisations in preparing for regulatory interaction.
+
+This includes readiness for audits, authority engagement, and positioning in enforcement-sensitive scenarios.
+
+Add section:
+Executive Dimension
+Text:
+At executive level, AI governance is not a technical framework.
+
+It is a decision structure.
+
+The question is not how AI works, but how responsibility is assigned, how risk is surfaced, and how decisions hold under external scrutiny.
+
+Add section:
+Context
+Text:
+AI governance becomes critical in environments where:
+
+– systems operate across multiple jurisdictions
+– regulatory expectations are evolving rapidly
+– AI is embedded into core business processes
+– decisions carry legal, reputational, and operational risk
+
+Add final section:
+The objective of AI governance is not control.
+
+It is clarity.
+
+Clarity over systems, responsibility, and exposure — enabling organisations to operate with confidence in an environment of increasing regulatory pressure.
+
+7) contact.html
+Title: Contact
+
+Use this text:
+For professional inquiries:
+
+gabor@majorosgabor.com
+
+Available for selected discussions and professional engagements.
+
+Implementation requirements:
+- Put the common header and footer on every page
+- Use semantic HTML5
+- Use one shared styles.css for all pages
+- Use one shared script.js for all pages
+- Add subtle fade-in animation to major sections
+- Add generous top and bottom spacing
+- Add elegant line separators between major sections
+- Ensure mobile responsiveness for all pages
+- Ensure links work correctly between all pages
+- Use clean file names exactly as listed
+- Do not leave placeholder text
+- Do not ask questions
+- Generate the full working site now
