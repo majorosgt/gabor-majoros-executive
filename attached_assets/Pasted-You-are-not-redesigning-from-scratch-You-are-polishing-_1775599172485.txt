@@ -1,0 +1,216 @@
+You are not redesigning from scratch. You are polishing and upgrading the existing visual system.
+
+Important:
+- Do not ask follow-up questions.
+- Do not simplify the design.
+- Keep the current site structure and current content.
+- Keep the same premium editorial direction already implemented.
+- This is a visual refinement and front-end polish task.
+- Preserve the current deep navy / gradient identity.
+- The goal is to move the current design from approximately 8.8/10 to a true top 1% executive-quality visual standard.
+
+Project context:
+The site is a premium executive personal brand website for a senior expert in privacy, AI governance, and regulatory risk.
+It must feel:
+- editorial
+- executive
+- restrained
+- luxurious
+- intelligent
+- technically refined
+
+It must NOT feel:
+- like a startup landing page
+- like a generic consulting agency
+- flat
+- cheap
+- overly monochrome
+- overly white
+- visually repetitive
+
+Keep:
+- current multi-page structure
+- current content
+- current typography direction
+- current deep navy aesthetic
+- current dark mode support
+- current mobile menu
+- current overall layout logic
+
+Main design issue to solve:
+The current version is strong, but too many dark sections appear consecutively, making the site visually monotone.
+Some cards and glass panels are too grey and not rich enough in blue tone.
+The hero section is good but not yet signature enough.
+The header is slightly too flat.
+The mobile experience needs more spacing and polish.
+The result should feel more layered, atmospheric, and memorable.
+
+Design instructions:
+
+1) Improve section rhythm
+Create stronger contrast between sections.
+Do not let too many dark/deep navy sections appear one after another without relief.
+Use a more deliberate alternation:
+- dark
+- light
+- blue-soft
+- dark
+- light
+This should make the page breathe more.
+
+2) Keep and strengthen the signature navy identity
+Retain the existing deep navy and blue gradients.
+Do not remove the blue sections.
+Do not replace them with plain white.
+Use the blue as a signature brand system.
+
+Use these exact color variables as the design foundation:
+--bg-main: #f6f3ee
+--bg-soft: #eeebe5
+--bg-soft-2: #e8e2d8
+--bg-deep: #1f4574
+--bg-deep-2: #16365d
+--text-main: #161616
+--text-soft: #6d675f
+--text-inverse: #f7f4ee
+--line: #d8d1c7
+--accent: #315f98
+--accent-soft: #8fa8c7
+
+For dark mode keep the existing dark palette, but ensure it remains luxurious and not just inverted.
+
+3) Add more visual depth and atmosphere
+Add subtle glow and gradient depth throughout the site.
+Use:
+- soft radial glows
+- layered pseudo-elements
+- faint ambient blue light
+- subtle blur-based effects
+Do not use images.
+Do not use textures from files.
+Do everything with CSS only.
+
+Specifically:
+- add a soft blue ambient glow behind the hero
+- add subtle radial glow to some deep sections
+- add light atmospheric variation so the site does not feel flat
+
+4) Improve the hero
+The hero is already strong but should feel more signature and dramatic.
+Add:
+- a subtle light bloom or glow behind the hero content
+- stronger visual hierarchy between the name, role, and tagline
+- elegant spacing between blocks
+- more premium composition on mobile
+
+Do not change the wording unless absolutely needed.
+Do not replace the copy.
+Only enhance layout, depth, scale, and polish.
+
+5) Improve the panels and preview cards
+The current translucent cards are too grey.
+Shift them visually toward a more refined blue-glass aesthetic.
+Use:
+- faint blue-tinted gradient overlays
+- more elegant borders
+- stronger but subtle separation from the background
+- better contrast in text
+
+Improve cards such as:
+- hero side panel
+- preview cards
+- perspective card
+- AI mini panels
+- any glass-like panel
+
+Use a blue-tinted glass feel instead of neutral grey.
+
+6) Improve the header
+The sticky header should feel more premium.
+Add:
+- a faint navy-to-transparent or deep tint feel
+- backdrop blur
+- stronger separation line
+- cleaner icon button presentation
+The theme toggle and hamburger menu should feel refined, not generic.
+
+7) Improve micro-interactions
+Add subtle high-end interaction only.
+No flashy motion.
+No large animations.
+Use:
+- gentle lift on card hover
+- slight border brightening on hover
+- subtle shadow refinement
+- refined nav underline animation
+- smooth transitions between hover states
+
+8) Improve mobile spacing
+On mobile:
+- increase readability
+- improve vertical rhythm
+- slightly increase line-height
+- reduce cramped feeling
+- ensure headings have enough breathing space
+- ensure preview cards do not feel too heavy stacked
+
+9) Keep typography premium
+Use:
+- Playfair Display for headings
+- Inter for body
+
+Maintain:
+- large serif headings
+- italic editorial emphasis
+- clean body text
+
+But refine:
+- line height
+- margins
+- spacing around italic pull-lines
+- spacing between section eyebrow and heading
+
+10) Make the visual identity more memorable
+This is important:
+the site should have a distinct signature look.
+That signature should be:
+- deep navy
+- soft warm background
+- elegant italic blue accents
+- refined glass panels
+- strong editorial hero
+- layered atmosphere
+
+11) Specific implementation actions
+Apply these improvements directly in the existing files:
+- styles.css
+- script.js if needed for subtle interaction polish
+- relevant HTML structure only where needed for polish
+
+Do not rebuild the whole site.
+Do not remove current content.
+Do not break the existing pages.
+
+12) Specific visual fixes requested
+Please implement these exact improvements:
+
+- Add a subtle hero glow using a pseudo-element behind the hero
+- Improve the glass/card panels to use more blue tint and less grey
+- Add stronger dark/light rhythm between major sections
+- Refine the header background so it is less flat
+- Add hover lift and border refinement to cards
+- Improve mobile spacing and readability
+- Preserve the current dark mode but refine its luxury feel
+- Keep the blue quote blocks and deep blue sections prominent
+- Make the homepage more visually dynamic without adding visual clutter
+
+13) Quality bar
+The final result should feel like:
+- a premium editorial microsite
+- an executive profile for someone who operates at board level
+- visually memorable
+- refined enough to be considered top 1%
+
+Do not leave TODO comments.
+Do not ask questions.
+Make the refinements directly now.
