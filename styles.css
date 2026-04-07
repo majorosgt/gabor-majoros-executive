@@ -12,8 +12,8 @@
   --text-xl:   clamp(1.75rem, 1.2rem + 1.5vw,    2.75rem);
   --text-2xl:  clamp(2.25rem, 1.5rem + 3vw,      4.5rem);
 
-  /* Hero name — the visual centrepiece */
-  --text-name: clamp(3.5rem, 1.5rem + 9vw, 11.5rem);
+  /* Hero name — prominent but balanced */
+  --text-name: clamp(2.25rem, 1rem + 5.5vw, 7rem);
 
   /* Spacing */
   --sp-1: .25rem; --sp-2: .5rem;  --sp-3: .75rem;
@@ -184,27 +184,28 @@ button { font: inherit; border: 0; background: none; color: inherit; cursor: poi
 }
 
 /* ── Homepage hero ── */
-.hero { padding: clamp(5rem, 10vw, 9rem) 0 clamp(3rem, 6vw, 5rem); }
+.hero { padding: clamp(3.5rem, 6vw, 6rem) 0 clamp(2rem, 4vw, 3.5rem); }
 .hero-dr {
   display: block; font-size: var(--text-xs);
-  letter-spacing: .22em; text-transform: uppercase;
-  color: var(--text-faint); margin-bottom: 1.25rem;
+  letter-spacing: .2em; text-transform: uppercase;
+  color: var(--text-faint); margin-bottom: .85rem;
 }
 .hero-name {
   font-size: var(--text-name);
   font-family: var(--font-display);
-  line-height: .9; letter-spacing: -.04em;
-  color: var(--text); margin-bottom: clamp(2rem, 4vw, 3.5rem);
+  line-height: .92; letter-spacing: -.04em;
+  color: var(--text); margin-bottom: clamp(1.25rem, 2.5vw, 2rem);
 }
 .hero-name span { display: block; }
 .hero-name .name-last { color: var(--text-muted); }
-.hero-rule { border: none; border-top: 1px solid var(--border); margin-bottom: clamp(2rem, 4vw, 3rem); }
-.hero-bottom { display: grid; gap: 2rem; }
+.hero-rule { border: none; border-top: 1px solid var(--border); margin-bottom: clamp(1.75rem, 3.5vw, 2.75rem); }
+.hero-bottom { display: grid; gap: 2.5rem; }
 .hero-tagline {
-  font-family: var(--font-display); font-size: var(--text-xl);
-  line-height: 1.15; letter-spacing: -.02em; max-width: 26ch;
+  font-family: var(--font-display);
+  font-size: clamp(1.6rem, 1.1rem + 2.5vw, 3.1rem);
+  line-height: 1.1; letter-spacing: -.025em; max-width: 26ch;
 }
-.hero-summary { color: var(--text-muted); max-width: 58ch; line-height: 1.7; }
+.hero-summary { color: var(--text-muted); max-width: 54ch; line-height: 1.75; font-size: var(--text-sm); }
 
 /* ── Pillars ── */
 .pillars { border-top: 1px solid var(--border); }
@@ -361,7 +362,7 @@ button { font: inherit; border: 0; background: none; color: inherit; cursor: poi
   .nav { display: flex; }
   .menu-toggle { display: none; }
   .why-grid { grid-template-columns: 1fr 1fr; }
-  .hero-bottom { grid-template-columns: 1fr 1fr; align-items: end; }
+  .hero-bottom { grid-template-columns: 1fr 1fr; align-items: start; gap: 4rem; }
 }
 
 @media (max-width: 640px) {
