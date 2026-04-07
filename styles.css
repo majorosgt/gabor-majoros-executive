@@ -185,11 +185,6 @@ button { font: inherit; border: 0; background: none; color: inherit; cursor: poi
 
 /* ── Homepage hero ── */
 .hero { padding: clamp(3.5rem, 6vw, 6rem) 0 clamp(2rem, 4vw, 3.5rem); }
-.hero-dr {
-  display: block; font-size: var(--text-xs);
-  letter-spacing: .2em; text-transform: uppercase;
-  color: var(--text-faint); margin-bottom: .85rem;
-}
 .hero-name {
   font-size: var(--text-name);
   font-family: var(--font-display);
@@ -197,7 +192,15 @@ button { font: inherit; border: 0; background: none; color: inherit; cursor: poi
   color: var(--text); margin-bottom: clamp(1.25rem, 2.5vw, 2rem);
 }
 .hero-name span { display: block; }
-.hero-name .name-last { color: var(--text-muted); }
+.name-prefix {
+  font-size: .42em;
+  color: var(--text-muted);
+  letter-spacing: -.01em;
+  margin-bottom: .18em;
+  line-height: 1;
+}
+.name-given  { color: var(--text); }
+.name-family { color: var(--text-muted); }
 .hero-rule { border: none; border-top: 1px solid var(--border); margin-bottom: clamp(1.75rem, 3.5vw, 2.75rem); }
 .hero-bottom { display: grid; gap: 2.5rem; }
 .hero-tagline {
