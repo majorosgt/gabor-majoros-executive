@@ -1,0 +1,173 @@
+Redesign this website into a premium multi-page executive profile site for Dr. Gábor Majoros.
+
+The current site feels too much like a CV and too text-heavy. Rebuild it so it feels like a high-end executive advisory website for boards, CEOs, investors, and global organizations. The tone should be strategic, quiet, polished, and authoritative.
+
+Important direction:
+
+Use English only everywhere.
+
+Remove all Hungarian words and labels.
+
+Make the name “Dr. Gábor Majoros” the main visual focus of the homepage, at least 2x to 2.5x larger than it is now.
+
+Reduce text significantly. Keep copy concise, selective, and premium.
+
+Avoid repetitive content.
+
+Remove duplicate navigation items.
+
+Default to light mode / white background. Dark mode can remain only as an optional toggle.
+
+The site should feel executive, editorial, Swiss, and board-level.
+
+It must not feel like a generic corporate template or a resume site.
+
+Rebuild the site as a multi-page static website with these pages:
+
+Home
+
+Advisory
+
+Track Record
+
+Perspective
+
+Contact
+
+Homepage requirements:
+
+Large name-led hero section.
+
+Short executive positioning statement.
+
+Focus on strategic advisory in AI governance, privacy, risk, compliance, digital trust, and board-level decision support.
+
+Use sector references only: travel, hospitality, aviation, financial services, legal-regulatory advisory.
+
+Do not emphasize current employer names on the homepage.
+
+Include 3 or 4 concise focus pillars.
+
+Include a short section explaining why this profile matters at executive level.
+
+Add one refined professional portrait placeholder.
+
+Advisory page requirements:
+
+Explain how he helps organizations in:
+
+AI governance and AI compliance
+
+Privacy strategy and operating model design
+
+Cross-border risk and compliance
+
+Strategic handling of authority-facing matters
+
+Privacy-related contentious and regulatory matters
+
+Board and executive-level advisory
+
+Keep the copy short, premium, and strategic.
+
+Avoid operational or overly technical jargon.
+
+Add a refined visual section or image placeholder.
+
+Track Record page requirements:
+
+Do not use an employer-by-employer CV timeline.
+
+Present selected track record using sector + mandate logic only.
+
+Use sections such as:
+
+Travel and Hospitality
+
+Aviation
+
+Financial Services
+
+Legal and Regulatory Advisory
+
+For each, describe the nature of mandates, governance complexity, jurisdictional reach, and strategic relevance.
+
+Make it feel like selected mandates and executive scope, not a biography.
+
+Do not use long bullet lists.
+
+Perspective page requirements:
+
+Create a concise executive thought-leadership page.
+
+Use short sections on themes such as:
+
+Strategic insight in AI governance
+
+Privacy as a board-level issue
+
+Digital trust and regulatory complexity
+
+Governance maturity across jurisdictions
+
+Keep the tone sharp, calm, and authoritative.
+
+Add a sophisticated editorial layout.
+
+Contact page requirements:
+
+Keep it minimal and selective.
+
+Do not display a personal phone number.
+
+Do not prominently display a direct personal email.
+
+Use LinkedIn-based outreach or private introduction language.
+
+Make the page feel discreet, premium, and executive-level.
+
+Navigation and UX:
+
+Use a clean top navigation with: Home, Advisory, Track Record, Perspective, Contact.
+
+No duplicate nav items.
+
+Do not use a one-page anchor-scroll structure.
+
+Make each page visually coherent and responsive.
+
+Make mobile design clean and premium.
+
+Visual design:
+
+White / light background should be the default.
+
+Use an elegant serif + modern sans-serif pairing.
+
+Use fewer boxes and more whitespace.
+
+Add 2–4 premium professional image placeholders or refined image slots.
+
+Make the layout feel expensive, credible, quiet, strategic, and international.
+
+Positioning:
+
+Emphasize board-facing advisory, strategic insight, and executive-level judgment.
+
+Position the profile around AI governance, privacy, digital trust, risk, compliance, and cross-jurisdictional complexity.
+
+Avoid turning the site into a resume.
+
+Replace CV energy with executive brand energy.
+
+Technical:
+
+Convert the project into a maintainable multi-page static site.
+
+Use separate files if helpful: index.html, advisory.html, track-record.html, perspective.html, contact.html, plus shared CSS and JS.
+
+Keep the code clean, simple, and production-ready.
+
+Goal:
+Create a website that looks like a premium executive advisory platform, not a CV, and not a generic template.
+
