@@ -111,13 +111,8 @@ a {
   transition: width 220ms ease;
 }
 
-.nav-link:hover::after,
-.nav-link.active::after {
+.nav-link:hover::after {
   width: 100%;
-}
-
-.nav-link.active {
-  color: var(--accent);
 }
 
 .nav-actions {
@@ -165,10 +160,6 @@ a {
   color: var(--text-main);
   padding: 10px 0;
   border-bottom: 1px solid color-mix(in srgb, var(--line) 70%, transparent 30%);
-}
-
-.mobile-link.active {
-  color: var(--accent);
 }
 
 .container {
@@ -277,10 +268,6 @@ a {
 
 .section + .section {
   border-top: 1px solid var(--line);
-}
-
-.section-soft {
-  background: linear-gradient(180deg, var(--bg-soft) 0%, var(--bg-soft-2) 100%);
 }
 
 .section-blue-soft {
@@ -409,100 +396,6 @@ h3 {
   max-width: 760px;
 }
 
-.section-number {
-  font-size: 0.88rem;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-  color: var(--accent);
-  opacity: 0.7;
-  margin: 0 0 14px;
-}
-
-.split {
-  display: grid;
-  gap: 32px;
-}
-
-.grid-2 {
-  display: grid;
-  gap: 22px;
-}
-
-.inline-panel {
-  padding: 26px 24px;
-  border: 1px solid var(--line);
-  background: rgba(255,255,255,0.28);
-  box-shadow: var(--shadow-soft);
-}
-
-.list-clean {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: grid;
-  gap: 12px;
-}
-
-.list-clean li {
-  position: relative;
-  padding-left: 16px;
-}
-
-.list-clean li::before {
-  content: "–";
-  position: absolute;
-  left: 0;
-  color: var(--accent);
-}
-
-.page-title-block {
-  padding: 72px 0 10px;
-}
-
-.page-title {
-  font-family: "Playfair Display", Georgia, serif;
-  font-size: clamp(2rem, 4.8vw, 3.35rem);
-  line-height: 1.04;
-  letter-spacing: -0.03em;
-  margin: 0;
-  max-width: 760px;
-}
-
-.preview-links {
-  display: grid;
-  gap: 0;
-  margin-top: 28px;
-}
-
-.preview-link {
-  display: block;
-  padding: 20px 0;
-  border-top: 1px solid var(--line);
-  color: var(--text-main);
-  transition: opacity 180ms ease;
-}
-
-.preview-link:last-child {
-  border-bottom: 1px solid var(--line);
-}
-
-.preview-link:hover {
-  opacity: 0.72;
-}
-
-.preview-link-title {
-  display: block;
-  font-family: "Playfair Display", Georgia, serif;
-  font-size: 1.44rem;
-  line-height: 1.1;
-  margin-bottom: 8px;
-}
-
-.preview-link-text {
-  display: block;
-  color: var(--text-soft);
-}
-
 .preview-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -583,17 +476,6 @@ h3 {
   transform: translateY(0);
 }
 
-@media (min-width: 860px) {
-  .split {
-    grid-template-columns: 0.9fr 1.1fr;
-    align-items: start;
-  }
-
-  .grid-2 {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
 @media (max-width: 980px) {
   .nav-links {
     display: none;
@@ -642,13 +524,5 @@ h3 {
   .hero-panel,
   .preview-card {
     padding: 22px 18px;
-  }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .reveal {
-    opacity: 1;
-    transform: none;
-    transition: none;
   }
 }
