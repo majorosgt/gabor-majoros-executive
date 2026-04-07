@@ -18,6 +18,10 @@ Premium, minimalist single-page personal website for an executive-level privacy 
 - **Sans**: Inter (Google Fonts)
 - **Max width**: 720px
 
+## Pages
+- `index.html` — Main single-page profile
+- `ai-governance.html` — Standalone AI Governance deep-dive page (links back to index.html)
+
 ## Page Structure (index.html)
 1. Sticky minimal header — name + location, no nav
 2. Hero — Dr. Gábor / Majoros name block, role, tagline in italic accent
