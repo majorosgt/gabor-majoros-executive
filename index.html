@@ -1,155 +1,427 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Dr. Gábor Majoros — AI Governance, Privacy &amp; Digital Trust</title>
-  <meta name="description" content="Board-facing executive advisor specialising in AI governance, privacy strategy, digital trust, and cross-border regulatory complexity." />
-  <link rel="preconnect" href="https://api.fontshare.com" />
-  <link href="https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600&f[]=zodiak@400,700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css" />
+  <title>Dr. Gábor Majoros — Privacy &amp; AI Governance</title>
+  <meta name="description" content="Dr. Gábor Majoros — Global Data Protection Officer. At the intersection of privacy, AI, and executive governance." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+  <style>
+    /* ── Reset ── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; }
+
+    /* ── Design tokens ── */
+    :root {
+      --bg:       #f8f7f4;
+      --surface:  #ffffff;
+      --text:     #1a1a1a;
+      --muted:    #5c5b58;
+      --faint:    #9a9895;
+      --accent:   #1f3a5f;
+      --border:   #e5e2db;
+      --max-w:    720px;
+      --fs:       'Playfair Display', Georgia, serif;
+      --fb:       'Inter', system-ui, sans-serif;
+      --tr:       200ms ease;
+    }
+
+    body {
+      font-family: var(--fb);
+      background: var(--bg);
+      color: var(--text);
+      font-size: 1rem;
+      line-height: 1.7;
+      font-weight: 300;
+    }
+
+    a { color: inherit; text-decoration: none; }
+    strong { font-weight: 500; color: var(--text); }
+
+    /* ── Wrap ── */
+    .wrap { width: min(calc(100% - 2.75rem), var(--max-w)); margin-inline: auto; }
+
+    /* ── Header ── */
+    .site-header {
+      position: sticky; top: 0; z-index: 50;
+      background: color-mix(in srgb, var(--bg) 90%, transparent);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      border-bottom: 1px solid var(--border);
+      padding: 1.15rem 0;
+    }
+    .header-inner { display: flex; justify-content: space-between; align-items: center; }
+    .header-name {
+      font-family: var(--fs); font-size: .9rem;
+      font-weight: 400; color: var(--text); letter-spacing: .005em;
+    }
+    .header-location {
+      font-size: .72rem; color: var(--faint);
+      letter-spacing: .12em; text-transform: uppercase;
+    }
+
+    /* ── Divider ── */
+    .divider { border: none; border-top: 1px solid var(--border); }
+
+    /* ── Sections ── */
+    .section { padding: clamp(3.5rem, 8vw, 5.5rem) 0; }
+
+    /* ── Eyebrow ── */
+    .eyebrow {
+      display: block; font-family: var(--fb); font-size: .72rem;
+      font-weight: 400; letter-spacing: .18em; text-transform: uppercase;
+      color: var(--faint); margin-bottom: 1.5rem;
+    }
+
+    /* ── HERO ── */
+    .hero { padding: clamp(5rem, 11vw, 8rem) 0 clamp(3rem, 7vw, 5rem); }
+    .hero-name {
+      font-family: var(--fs); font-weight: 400;
+      font-size: clamp(2.8rem, 2rem + 3.5vw, 4.75rem);
+      line-height: .95; letter-spacing: -.025em;
+      color: var(--text); margin-bottom: 2rem;
+    }
+    .hero-name span { display: block; }
+    .hero-name .line-1 { font-size: .95em; }
+    .hero-name .line-2 { color: var(--muted); }
+    .hero-subtitle {
+      display: grid; gap: .35rem; margin-bottom: 2.25rem;
+    }
+    .hero-subtitle .role {
+      font-size: clamp(.95rem, .85rem + .3vw, 1.05rem);
+      font-weight: 500; color: var(--text);
+    }
+    .hero-subtitle .prev {
+      font-size: clamp(.875rem, .8rem + .2vw, .95rem);
+      color: var(--muted); font-weight: 300;
+    }
+    .hero-tagline {
+      font-family: var(--fs); font-weight: 400; font-style: italic;
+      font-size: clamp(1.15rem, 1rem + .7vw, 1.5rem);
+      line-height: 1.3; color: var(--accent); max-width: 32ch;
+    }
+
+    /* ── QUOTE ── */
+    .quote-band {
+      background: var(--accent);
+      padding: clamp(3rem, 8vw, 5.5rem) 0;
+    }
+    .quote-text {
+      font-family: var(--fs); font-weight: 400; font-style: italic;
+      font-size: clamp(1.5rem, 1.2rem + 1.5vw, 2.4rem);
+      line-height: 1.2; color: #fff;
+      margin-bottom: 1.5rem;
+    }
+    .quote-attr {
+      font-size: .72rem; letter-spacing: .14em;
+      text-transform: uppercase; color: rgba(255,255,255,.45);
+    }
+
+    /* ── BODY TEXT ── */
+    .body-para {
+      font-size: clamp(.975rem, .9rem + .2vw, 1.1rem);
+      color: var(--muted); line-height: 1.85; max-width: 62ch;
+    }
+
+    /* ── EXPERIENCE LIST ── */
+    .exp-list { list-style: none; display: grid; gap: .75rem; margin-top: .5rem; }
+    .exp-list li {
+      display: flex; align-items: baseline; gap: 1rem;
+      font-size: clamp(.875rem, .82rem + .2vw, .95rem);
+      color: var(--muted); font-weight: 300;
+    }
+    .exp-list li::before {
+      content: '';
+      flex-shrink: 0; width: 20px; height: 1px;
+      background: var(--accent); margin-top: .75rem;
+    }
+
+    /* ── SECTION HEADING ── */
+    .section-heading {
+      font-family: var(--fs); font-weight: 400;
+      font-size: clamp(1.7rem, 1.3rem + 1.4vw, 2.6rem);
+      line-height: 1.05; letter-spacing: -.015em;
+      color: var(--text); margin-bottom: clamp(2rem, 5vw, 3.25rem);
+    }
+
+    /* ── EXPERTISE ITEMS ── */
+    .expertise-list { border-top: 1px solid var(--border); }
+    .expertise-item {
+      padding: 2rem 0; border-bottom: 1px solid var(--border);
+      display: grid; gap: .65rem;
+    }
+    .exp-num {
+      font-family: var(--fb); font-size: .68rem; font-weight: 400;
+      letter-spacing: .18em; text-transform: uppercase; color: var(--faint);
+    }
+    .exp-title {
+      font-family: var(--fs); font-weight: 400;
+      font-size: clamp(1.05rem, .95rem + .35vw, 1.25rem);
+      letter-spacing: -.01em; color: var(--text);
+    }
+    .exp-body {
+      font-size: clamp(.85rem, .8rem + .15vw, .925rem);
+      color: var(--muted); line-height: 1.8; max-width: 58ch;
+    }
+
+    /* ── SECTORS ── */
+    .sectors-para {
+      font-size: clamp(.975rem, .9rem + .2vw, 1.1rem);
+      color: var(--muted); line-height: 1.85;
+    }
+
+    /* ── CREDENTIALS ── */
+    .cred-list { list-style: none; display: grid; gap: 0; }
+    .cred-item {
+      padding: 1rem 0; border-bottom: 1px solid var(--border);
+      display: grid; gap: .2rem;
+    }
+    .cred-item:first-child { border-top: 1px solid var(--border); }
+    .cred-title { font-size: .95rem; color: var(--text); font-weight: 400; }
+    .cred-org   { font-size: .8rem; color: var(--faint); font-weight: 300; }
+    .cert-row   { display: flex; flex-wrap: wrap; gap: .45rem; margin-top: 1.75rem; }
+    .cert {
+      padding: .3rem .8rem;
+      border: 1px solid var(--border); border-radius: 2rem;
+      font-size: .72rem; color: var(--muted);
+      letter-spacing: .07em; font-weight: 400;
+    }
+
+    /* ── CONTACT ── */
+    .contact-lead {
+      font-size: clamp(.975rem, .9rem + .2vw, 1.05rem);
+      color: var(--muted); line-height: 1.75;
+      max-width: 50ch; margin-bottom: 2rem;
+    }
+    .contact-link {
+      display: inline-flex; align-items: center; gap: .5rem;
+      font-family: var(--fs); font-size: 1.05rem; font-weight: 400;
+      color: var(--accent);
+      border-bottom: 1px solid currentColor; padding-bottom: .1rem;
+      transition: color var(--tr), border-color var(--tr);
+    }
+    .contact-link:hover { color: #0f2040; }
+    .contact-link svg { flex-shrink: 0; }
+    .contact-note {
+      margin-top: 2rem; font-size: .8rem;
+      color: var(--faint); line-height: 1.65; max-width: 46ch;
+    }
+
+    /* ── FOOTER ── */
+    .site-footer { padding: 2.5rem 0 3.5rem; border-top: 1px solid var(--border); }
+    .footer-inner {
+      display: flex; flex-wrap: wrap; justify-content: space-between;
+      align-items: center; gap: 1rem;
+    }
+    .footer-name { font-family: var(--fs); font-size: .9rem; font-weight: 400; }
+    .footer-info { font-size: .72rem; color: var(--faint); letter-spacing: .1em; text-transform: uppercase; }
+
+    /* ── Reveal animations ── */
+    .reveal {
+      opacity: 0; transform: translateY(18px);
+      transition: opacity .75s ease, transform .75s ease;
+    }
+    .reveal.in { opacity: 1; transform: translateY(0); }
+
+    /* ── Responsive ── */
+    @media (max-width: 520px) {
+      .header-location { display: none; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .reveal { opacity: 1; transform: none; transition: none; }
+    }
+  </style>
 </head>
 <body>
-  <a class="skip-link" href="#main">Skip to content</a>
 
-  <header class="header">
-    <div class="container header-inner">
-      <a class="brand" href="index.html">Dr. Gábor Majoros</a>
-      <nav class="nav" aria-label="Primary">
-        <a href="index.html"        aria-current="page">Home</a>
-        <a href="expertise.html">Expertise</a>
-        <a href="track-record.html">Track Record</a>
-        <a href="perspective.html">Perspective</a>
-        <a href="contact.html">Contact</a>
-      </nav>
-      <div class="header-actions">
-        <button class="theme-toggle" type="button" data-theme-toggle aria-label="Switch theme"></button>
-        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobileNav" aria-label="Open menu"></button>
-      </div>
-    </div>
-    <div class="container" id="mobileNav" style="display:none;">
-      <nav class="mobile-nav" aria-label="Mobile">
-        <a href="index.html"        aria-current="page">Home</a>
-        <a href="expertise.html">Expertise</a>
-        <a href="track-record.html">Track Record</a>
-        <a href="perspective.html">Perspective</a>
-        <a href="contact.html">Contact</a>
-      </nav>
+  <!-- ── Header ── -->
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <span class="header-name">Dr. Gábor Majoros</span>
+      <span class="header-location">Geneva, Switzerland</span>
     </div>
   </header>
 
-  <main id="main">
-
-    <!-- ── Hero ── -->
-    <section class="hero container">
+  <!-- ── Hero ── -->
+  <section class="hero">
+    <div class="wrap">
       <h1 class="hero-name reveal">
-        <span>Dr. Gábor</span>
-        <span class="name-family">Majoros</span>
+        <span class="line-1">Dr. Gábor</span>
+        <span class="line-2">Majoros</span>
       </h1>
-      <hr class="hero-rule" />
-      <div class="hero-bottom reveal">
-        <p class="hero-tagline">Strategic executive in AI governance, privacy, and digital trust.</p>
-        <p class="hero-summary">Board-facing leader with 15&thinsp;+ years of international experience across privacy governance, AI compliance, regulatory strategy, and cross-border risk.</p>
+      <div class="hero-subtitle reveal">
+        <span class="role">Global Data Protection Officer</span>
+        <span class="prev">Former Deloitte Consulting</span>
       </div>
-    </section>
+      <p class="hero-tagline reveal">At the intersection of privacy, AI, and executive governance.</p>
+    </div>
+  </section>
 
-    <!-- ── Stat strip ── -->
-    <div class="container">
-      <div class="stat-strip reveal">
-        <div class="stat-item">
-          <span class="stat-num">15+</span>
-          <span class="stat-label">Years of international leadership</span>
+  <hr class="divider" />
+
+  <!-- ── Quote ── -->
+  <div class="quote-band">
+    <div class="wrap">
+      <p class="quote-text reveal">&ldquo;In the digital world,<br>freedom is called privacy.&rdquo;</p>
+      <p class="quote-attr reveal">Personal guiding principle</p>
+    </div>
+  </div>
+
+  <!-- ── Executive Positioning ── -->
+  <section class="section">
+    <div class="wrap">
+      <span class="eyebrow reveal">Executive Positioning</span>
+      <p class="body-para reveal">Privacy and AI governance are no longer legal overhead — they are strategic assets and institutional risk. Organisations that govern them well earn the trust of boards, regulators, and markets. Organisations that don&rsquo;t face the kind of exposure that compounds quietly, then arrives loudly. The professional focus here is not compliance for its own sake. It is governance as a strategic position.</p>
+    </div>
+  </section>
+
+  <hr class="divider" />
+
+  <!-- ── Experience Context ── -->
+  <section class="section">
+    <div class="wrap">
+      <span class="eyebrow reveal">Career Context</span>
+      <ul class="exp-list">
+        <li class="reveal">Deloitte Legal — Strategic compliance and regulatory advisory for multinational clients across sectors</li>
+        <li class="reveal">Global DPO — Cruise, aviation, and banking environments across multiple jurisdictions</li>
+        <li class="reveal">Board-level reporting — Direct access to CEO and Executive Chairman level</li>
+        <li class="reveal">International scope — Governance leadership across Europe, the Americas, and Asia-Pacific</li>
+      </ul>
+    </div>
+  </section>
+
+  <hr class="divider" />
+
+  <!-- ── Executive Focus ── -->
+  <section class="section">
+    <div class="wrap">
+      <span class="eyebrow reveal">Executive Focus</span>
+      <h2 class="section-heading reveal">Selected areas of professional depth.</h2>
+
+      <div class="expertise-list">
+
+        <div class="expertise-item reveal">
+          <span class="exp-num">01</span>
+          <h3 class="exp-title">AI Governance &amp; Compliance</h3>
+          <p class="exp-body">Governance model design, high-risk AI categorisation, internal accountability structures, and EU AI Act readiness — building governance that earns board-level trust and holds under external scrutiny.</p>
         </div>
-        <div class="stat-item">
-          <span class="stat-num">Global</span>
-          <span class="stat-label">Cross-border privacy and AI expertise</span>
+
+        <div class="expertise-item reveal">
+          <span class="exp-num">02</span>
+          <h3 class="exp-title">Privacy Strategy &amp; Operating Model</h3>
+          <p class="exp-body">Enterprise-wide privacy operating model design — accountability frameworks, privacy-by-design workflows, cross-border data governance, and programs that scale with executive coherence intact.</p>
         </div>
-        <div class="stat-item">
-          <span class="stat-num">4</span>
-          <span class="stat-label">Core industry sectors</span>
+
+        <div class="expertise-item reveal">
+          <span class="exp-num">03</span>
+          <h3 class="exp-title">Cross-Border Risk &amp; Regulatory Complexity</h3>
+          <p class="exp-body">Cross-border risk mapping, jurisdictional conflict analysis, and the governance architecture to remain coherent across Europe, the Americas, and Asia — where regulatory expectations compound rather than align.</p>
         </div>
-        <div class="stat-item">
-          <span class="stat-num">Multi</span>
-          <span class="stat-label">Authority-facing matters led</span>
+
+        <div class="expertise-item reveal">
+          <span class="exp-num">04</span>
+          <h3 class="exp-title">Authority-Facing Matters</h3>
+          <p class="exp-body">Disciplined engagement with data protection authorities and AI regulators — investigation strategy, authority positioning, and preparation required before, during, and after enforcement-sensitive situations.</p>
         </div>
+
+        <div class="expertise-item reveal">
+          <span class="exp-num">05</span>
+          <h3 class="exp-title">Contentious Privacy Matters</h3>
+          <p class="exp-body">When privacy disputes become contentious, strategic framing matters as much as the legal argument. This experience spans complex regulatory matters, coordinating across legal, compliance, and business leadership to protect both rights and institutional standing.</p>
+        </div>
+
+        <div class="expertise-item reveal">
+          <span class="exp-num">06</span>
+          <h3 class="exp-title">Board &amp; Executive Governance</h3>
+          <p class="exp-body">Translating regulatory complexity into clear executive framing — equipping boards for informed decision-making and ensuring governance posture reflects the organisation&rsquo;s broader institutional position.</p>
+        </div>
+
       </div>
     </div>
+  </section>
 
-    <!-- ── Focus pillars ── -->
-    <section class="section container">
-      <span class="eyebrow reveal">Areas of focus</span>
-      <div class="pillars reveal">
-        <div class="pillar">
-          <div class="pillar-head">
-            <span class="pillar-num">01</span>
-            <h2 class="pillar-title">AI Governance &amp; Compliance</h2>
-          </div>
-          <p class="pillar-body">Designing and operationalising AI compliance frameworks, governance models, and high-risk AI readiness — aligned with the EU AI Act and emerging global regulatory standards.</p>
-        </div>
-        <div class="pillar">
-          <div class="pillar-head">
-            <span class="pillar-num">02</span>
-            <h2 class="pillar-title">Privacy Strategy &amp; Operating Model</h2>
-          </div>
-          <p class="pillar-body">Building enterprise privacy programs, scalable controls, and privacy-by-design operating models that hold up across multiple jurisdictions and regulatory regimes.</p>
-        </div>
-        <div class="pillar">
-          <div class="pillar-head">
-            <span class="pillar-num">03</span>
-            <h2 class="pillar-title">Authority-Facing Regulatory Matters</h2>
-          </div>
-          <p class="pillar-body">Leading strategic engagement with supervisory authorities — investigations, enforcement-sensitive situations, and complex regulatory escalations requiring disciplined executive coordination.</p>
-        </div>
-        <div class="pillar">
-          <div class="pillar-head">
-            <span class="pillar-num">04</span>
-            <h2 class="pillar-title">Board &amp; Executive Advisory</h2>
-          </div>
-          <p class="pillar-body">Translating regulatory complexity into board-level judgment, supporting CEO and chairman conversations on AI risk, digital trust, and the governance decisions that define organisational reputation.</p>
-        </div>
+  <hr class="divider" />
+
+  <!-- ── Sectors ── -->
+  <section class="section">
+    <div class="wrap">
+      <span class="eyebrow reveal">Industry Context</span>
+      <p class="sectors-para reveal">Cross-sector experience across <strong>travel and hospitality</strong>, <strong>aviation</strong>, <strong>financial services</strong>, and <strong>legal and regulatory advisory</strong> — each characterised by high data volumes, multi-jurisdictional operations, and board-level accountability for regulatory posture. The common thread is governance complexity that demands executive judgment, not only procedural compliance.</p>
+    </div>
+  </section>
+
+  <hr class="divider" />
+
+  <!-- ── Credentials ── -->
+  <section class="section">
+    <div class="wrap">
+      <span class="eyebrow reveal">Education &amp; Credentials</span>
+      <ul class="cred-list">
+        <li class="cred-item reveal">
+          <span class="cred-title">Doctor of Law (J.D.)</span>
+          <span class="cred-org">Pázmány Péter Catholic University</span>
+        </li>
+        <li class="cred-item reveal">
+          <span class="cred-title">Postgraduate Diploma in Privacy &amp; Security Law</span>
+          <span class="cred-org">Eötvös Loránd University</span>
+        </li>
+        <li class="cred-item reveal">
+          <span class="cred-title">BA in European Business Law</span>
+          <span class="cred-org">University of Abertay Dundee</span>
+        </li>
+      </ul>
+      <div class="cert-row reveal">
+        <span class="cert">FIP</span>
+        <span class="cert">CIPP/E</span>
+        <span class="cert">CIPM</span>
+        <span class="cert">ECPC-G · Maastricht</span>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- ── Why this profile ── -->
-    <section class="section container">
-      <hr class="rule" />
-      <div class="why-grid" style="padding-top: var(--section-gap);">
-        <div class="why-text reveal">
-          <span class="eyebrow">Why this profile</span>
-          <h2 class="h2">At the intersection of law, governance, and executive judgment.</h2>
-          <p>This is not a compliance function. It is a strategic advisory capability for organisations where AI, privacy, digital operations, and cross-border risk must be governed at the highest level — with board visibility and executive accountability.</p>
-          <p>Sectors served include travel and hospitality, aviation, financial services, and legal-regulatory advisory. The common thread is complexity, jurisdictional scope, and the need for judgment that holds under scrutiny.</p>
-          <div class="cred-list">
-            <span class="cred">FIP</span>
-            <span class="cred">CIPP/E</span>
-            <span class="cred">CIPM</span>
-            <span class="cred">ECPC-G</span>
-            <span class="cred">Doctor of Law</span>
-          </div>
-          <div style="margin-top: 1.5rem; display: flex; gap: 1rem; flex-wrap: wrap;">
-            <a class="btn btn-primary" href="expertise.html">Areas of expertise</a>
-            <a class="btn btn-outline" href="contact.html">Make contact</a>
-          </div>
-        </div>
-        <div class="portrait-wrap reveal">
-          <div class="portrait">
-            <div class="portrait-inner">
-              <span class="portrait-caption">Dr. Gábor Majoros · Geneva</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+  <hr class="divider" />
 
-  </main>
+  <!-- ── Contact ── -->
+  <section class="section">
+    <div class="wrap">
+      <span class="eyebrow reveal">Contact</span>
+      <p class="contact-lead reveal">First contact is welcomed through professional channels and curated introductions. Direct personal details remain private.</p>
+      <a class="contact-link reveal"
+         href="https://www.linkedin.com/in/majorosgt/"
+         target="_blank" rel="noopener noreferrer">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+        </svg>
+        LinkedIn — Dr. Gábor Majoros
+      </a>
+      <p class="contact-note reveal">Geneva, Switzerland &nbsp;&middot;&nbsp; Introductions through mutual professional contacts are preferred. Unsolicited commercial outreach is not engaged with.</p>
+    </div>
+  </section>
 
-  <footer class="footer">
-    <div class="container footer-inner">
+  <!-- ── Footer ── -->
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
       <span class="footer-name">Dr. Gábor Majoros</span>
-      <span class="footer-copy">AI Governance · Privacy · Digital Trust · Geneva</span>
+      <span class="footer-info">AI Governance &nbsp;&middot;&nbsp; Privacy &nbsp;&middot;&nbsp; Digital Trust</span>
     </div>
   </footer>
 
-  <script src="main.js"></script>
+  <script>
+    (function () {
+      if (!('IntersectionObserver' in window)) {
+        document.querySelectorAll('.reveal').forEach(function (el) { el.classList.add('in'); });
+        return;
+      }
+      var obs = new IntersectionObserver(function (entries) {
+        entries.forEach(function (e) {
+          if (e.isIntersecting) { e.target.classList.add('in'); obs.unobserve(e.target); }
+        });
+      }, { threshold: 0.1 });
+      document.querySelectorAll('.reveal').forEach(function (el) { obs.observe(el); });
+    })();
+  </script>
+
 </body>
 </html>

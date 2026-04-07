@@ -1,39 +1,41 @@
-# Dr. Gábor Majoros — Executive Advisory Website
+# Dr. Gábor Majoros — Executive Profile Website
 
-## Project Overview
-A premium multi-page executive advisory website for Dr. Gábor Majoros — board-facing advisor in AI governance, privacy strategy, and digital trust. Designed to feel like a high-end executive advisory platform, not a resume site.
+## Overview
+Premium, minimalist single-page personal website for an executive-level privacy and AI governance expert. Editorial, board-level aesthetic — not a consulting business site.
 
-## Tech Stack
-- **Languages**: HTML5, CSS3, vanilla JavaScript
-- **Fonts**: Zodiak (serif display) + General Sans (body) via Fontshare
-- **Build system**: None — pure static site
-- **Package manager**: None
+## Architecture
+- **Single-page static site** — all content in `index.html`, fully self-contained (CSS and JS embedded)
+- Served via `python3 -m http.server 5000 --bind 0.0.0.0`
+- Additional pages from previous multi-page iteration remain: `expertise.html`, `track-record.html`, `perspective.html`, `contact.html`, `styles.css`, `main.js` (not linked from main index)
 
-## Project Structure
-```
-index.html          Homepage — large name-led hero, pillars, "why this profile"
-advisory.html       Advisory scope — 6 service areas
-track-record.html   Sector-led mandates (not a CV timeline)
-perspective.html    Executive thought leadership — 4 themes
-contact.html        Discreet, minimal contact page
-styles.css          Shared design system (all CSS)
-main.js             Shared JS — theme toggle, mobile menu, scroll reveal
-replit.md           This file
-```
+## Design System
+- **Background**: `#f8f7f4` (soft off-white)
+- **Text**: `#1a1a1a`
+- **Muted**: `#5c5b58`
+- **Accent**: `#1f3a5f` (deep navy)
+- **Border**: `#e5e2db`
+- **Serif**: Playfair Display (Google Fonts)
+- **Sans**: Inter (Google Fonts)
+- **Max width**: 720px
 
-## Design Principles
-- Light mode default, optional dark mode toggle (preference saved to localStorage)
-- Large editorial serif name as homepage centrepiece
-- Whitespace-led layout — no card grids
-- English only throughout
-- No CV energy — executive brand energy
+## Page Structure (index.html)
+1. Sticky minimal header — name + location, no nav
+2. Hero — Dr. Gábor / Majoros name block, role, tagline in italic accent
+3. Quote band — full-width dark navy with signature quote
+4. Executive Positioning — short strategic paragraph
+5. Career Context — 4 bullet points with dash rule
+6. Executive Focus — heading + 6 numbered expertise items (01–06)
+7. Industry Context — sector paragraph
+8. Education & Credentials — degrees + certification pills
+9. Contact — LinkedIn link, no form, no email
 
-## Running the Project
-Served via Python's built-in HTTP server on port 5000:
-```
-python3 -m http.server 5000 --bind 0.0.0.0
-```
-The "Start application" workflow handles this automatically.
+## Tone & Rules
+- Executive, understated, authoritative — NOT consulting/services framing
+- No pricing, no CTAs, no "discuss an engagement" language
+- English only
+- No dark mode toggle on this version
+- "Dr." and given name always at the same typographic size
+- Smooth scroll + IntersectionObserver fade-in reveals
 
-## Deployment
-Configured as a **static** deployment (root directory).
+## LinkedIn
+https://www.linkedin.com/in/majorosgt/
