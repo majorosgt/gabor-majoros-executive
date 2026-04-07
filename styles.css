@@ -375,13 +375,37 @@ a {
 }
 
 .section-light-editorial .preview-card {
+  position: relative;
+  padding: 26px 24px;
   background: linear-gradient(
     180deg,
-    rgba(255, 255, 255, 0.72) 0%,
-    rgba(240, 235, 225, 0.60) 100%
+    rgba(255, 255, 255, 0.85) 0%,
+    rgba(232, 226, 216, 0.65) 100%
   );
-  border: 1px solid rgba(0, 0, 0, 0.06);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  box-shadow:
+    0 10px 30px rgba(0, 0, 0, 0.08),
+    inset 0 1px 0 rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(6px);
+}
+
+.section-light-editorial .preview-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    120deg,
+    rgba(143, 168, 199, 0.12),
+    transparent 40%
+  );
+  pointer-events: none;
+}
+
+.section-light-editorial .preview-card:hover {
+  transform: translateY(-3px);
+  box-shadow:
+    0 14px 40px rgba(0, 0, 0, 0.12),
+    inset 0 1px 0 rgba(255, 255, 255, 0.6);
 }
 
 .section-deep,

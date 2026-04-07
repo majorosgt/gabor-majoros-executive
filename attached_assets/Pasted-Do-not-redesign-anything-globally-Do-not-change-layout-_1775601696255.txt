@@ -1,0 +1,94 @@
+Do not redesign anything globally.
+
+Do not change layout.
+Do not change colors outside this component.
+Do not touch navigation.
+Do not modify other sections.
+
+Only fix the LIGHT glass cards inside the "Selected Sections" area.
+
+--------------------------------------------------
+PROBLEM
+--------------------------------------------------
+
+The current light cards look flat, washed out, and low contrast.
+
+We need to restore the previous premium glass style:
+- more depth
+- subtle gradient
+- soft shadow
+- slightly darker base
+- elegant contrast
+
+--------------------------------------------------
+TASK
+--------------------------------------------------
+
+Update ONLY this selector:
+
+.section-light-editorial .preview-card
+
+--------------------------------------------------
+REPLACE CURRENT STYLE WITH THIS EXACT VERSION
+--------------------------------------------------
+
+.section-light-editorial .preview-card {
+  position: relative;
+  padding: 26px 24px;
+
+  background: linear-gradient(
+    180deg,
+    rgba(255,255,255,0.85) 0%,
+    rgba(232,226,216,0.65) 100%
+  );
+
+  border: 1px solid rgba(0,0,0,0.08);
+
+  box-shadow:
+    0 10px 30px rgba(0,0,0,0.08),
+    inset 0 1px 0 rgba(255,255,255,0.6);
+
+  backdrop-filter: blur(6px);
+}
+
+--------------------------------------------------
+ADD SUBTLE DEPTH LAYER
+--------------------------------------------------
+
+.section-light-editorial .preview-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    120deg,
+    rgba(143,168,199,0.12),
+    transparent 40%
+  );
+  pointer-events: none;
+}
+
+--------------------------------------------------
+HOVER (VERY SUBTLE)
+--------------------------------------------------
+
+.section-light-editorial .preview-card:hover {
+  transform: translateY(-3px);
+  box-shadow:
+    0 14px 40px rgba(0,0,0,0.12),
+    inset 0 1px 0 rgba(255,255,255,0.6);
+}
+
+--------------------------------------------------
+IMPORTANT RULES
+--------------------------------------------------
+
+- Do NOT change any dark cards
+- Do NOT change hero panel
+- Do NOT change blue sections
+- Do NOT change global color system
+- Only update this one component
+
+--------------------------------------------------
+
+Apply the change now.
+Do not ask questions.
