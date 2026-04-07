@@ -72,14 +72,15 @@ a {
   position: sticky;
   top: 0;
   z-index: 1000;
-  background:
-    linear-gradient(180deg,
-      color-mix(in srgb, var(--bg-main) 82%, rgba(31, 69, 116, 0.12) 18%) 0%,
-      color-mix(in srgb, var(--bg-main) 88%, transparent 12%) 100%);
-  backdrop-filter: blur(20px) saturate(1.4);
-  -webkit-backdrop-filter: blur(20px) saturate(1.4);
-  border-bottom: 1px solid color-mix(in srgb, var(--line) 80%, rgba(49, 95, 152, 0.15) 20%);
-  box-shadow: 0 1px 0 rgba(49, 95, 152, 0.06), 0 4px 24px rgba(10, 20, 35, 0.05);
+  background: linear-gradient(
+    180deg,
+    rgba(10, 20, 35, 0.90) 0%,
+    rgba(10, 20, 35, 0.72) 100%
+  );
+  backdrop-filter: blur(20px) saturate(1.5);
+  -webkit-backdrop-filter: blur(20px) saturate(1.5);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.09);
+  box-shadow: 0 1px 0 rgba(49, 95, 152, 0.12), 0 6px 32px rgba(10, 20, 35, 0.18);
 }
 
 .nav-shell {
@@ -95,12 +96,12 @@ a {
 .brand {
   font-family: "Playfair Display", Georgia, serif;
   font-size: 1.12rem;
-  color: var(--text-main);
+  color: var(--text-inverse);
   letter-spacing: -0.01em;
   white-space: nowrap;
   transition: opacity var(--transition);
 }
-.brand:hover { opacity: 0.74; }
+.brand:hover { opacity: 0.70; }
 
 .nav-links {
   display: flex;
@@ -110,7 +111,7 @@ a {
 
 .nav-link {
   position: relative;
-  color: var(--text-main);
+  color: rgba(247, 244, 238, 0.82);
   font-size: 0.92rem;
   letter-spacing: 0.01em;
   padding: 4px 0;
@@ -124,15 +125,15 @@ a {
   bottom: -4px;
   width: 0;
   height: 1.5px;
-  background: linear-gradient(90deg, var(--accent), var(--accent-soft));
+  background: linear-gradient(90deg, var(--accent-soft), rgba(255,255,255,0.6));
   border-radius: 999px;
   transition: width 240ms var(--ease-out);
 }
 
-.nav-link:hover { color: var(--accent); }
+.nav-link:hover { color: #ffffff; }
 .nav-link:hover::after,
 .nav-link.active::after { width: 100%; }
-.nav-link.active { color: var(--accent); }
+.nav-link.active { color: #ffffff; }
 
 .nav-actions {
   display: flex;
@@ -142,13 +143,13 @@ a {
 
 .theme-toggle,
 .menu-button {
-  border: 1px solid color-mix(in srgb, var(--line) 60%, rgba(49, 95, 152, 0.18) 40%);
+  border: 1px solid rgba(255, 255, 255, 0.16);
   background: linear-gradient(
     135deg,
-    rgba(255, 255, 255, 0.32) 0%,
-    rgba(143, 168, 199, 0.12) 100%
+    rgba(255, 255, 255, 0.12) 0%,
+    rgba(143, 168, 199, 0.08) 100%
   );
-  color: var(--text-main);
+  color: var(--text-inverse);
   width: 42px;
   height: 42px;
   border-radius: 999px;
@@ -157,18 +158,18 @@ a {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 2px 8px rgba(10, 20, 35, 0.08), inset 0 1px 0 rgba(255,255,255,0.28);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.18), inset 0 1px 0 rgba(255,255,255,0.12);
   transition: border-color var(--transition), box-shadow var(--transition), background var(--transition);
 }
 
 .theme-toggle:hover,
 .menu-button:hover {
-  border-color: color-mix(in srgb, var(--accent) 32%, var(--line) 68%);
-  box-shadow: 0 4px 14px rgba(49, 95, 152, 0.18), inset 0 1px 0 rgba(255,255,255,0.28);
+  border-color: rgba(255, 255, 255, 0.30);
+  box-shadow: 0 4px 14px rgba(49, 95, 152, 0.28), inset 0 1px 0 rgba(255,255,255,0.12);
   background: linear-gradient(
     135deg,
-    rgba(255, 255, 255, 0.42) 0%,
-    rgba(143, 168, 199, 0.20) 100%
+    rgba(255, 255, 255, 0.18) 0%,
+    rgba(143, 168, 199, 0.14) 100%
   );
 }
 
@@ -177,8 +178,8 @@ a {
 /* ─── Mobile Menu ────────────────────────────────────────────────────── */
 .mobile-menu {
   display: none;
-  border-top: 1px solid var(--line);
-  background: color-mix(in srgb, var(--bg-main) 94%, rgba(49, 95, 152, 0.06) 6%);
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(10, 20, 35, 0.95);
   backdrop-filter: blur(20px);
 }
 .mobile-menu.open { display: block; }
@@ -192,15 +193,15 @@ a {
 }
 
 .mobile-link {
-  color: var(--text-main);
-  padding: 12px 0;
+  color: rgba(247, 244, 238, 0.78);
+  padding: 13px 0;
   font-size: 0.97rem;
-  border-bottom: 1px solid color-mix(in srgb, var(--line) 60%, transparent 40%);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.07);
   transition: color var(--transition);
 }
 .mobile-link:last-child { border-bottom: none; }
 .mobile-link:hover,
-.mobile-link.active { color: var(--accent); }
+.mobile-link.active { color: #ffffff; }
 
 /* ─── Layout Container ───────────────────────────────────────────────── */
 .container {
@@ -233,16 +234,14 @@ a {
 .hero::before {
   content: "";
   position: absolute;
-  top: -20%;
-  left: -8%;
-  width: 72%;
-  height: 100%;
-  background: radial-gradient(ellipse at 30% 40%,
-    rgba(49, 95, 152, 0.14) 0%,
-    rgba(143, 168, 199, 0.06) 40%,
-    transparent 70%);
-  filter: blur(48px);
+  top: -120px;
+  right: -80px;
+  width: 320px;
+  height: 320px;
+  background: rgba(49, 95, 152, 0.25);
+  filter: blur(120px);
   pointer-events: none;
+  border-radius: 50%;
   z-index: 0;
 }
 
@@ -343,7 +342,7 @@ a {
 
 /* ─── Sections ───────────────────────────────────────────────────────── */
 .section {
-  padding: 88px 0;
+  padding: 84px 0;
   position: relative;
 }
 
@@ -363,6 +362,26 @@ a {
     linear-gradient(165deg, rgba(49, 95, 152, 0.07) 0%, rgba(143, 168, 199, 0.06) 100%);
   border-top: 1px solid rgba(49, 95, 152, 0.13);
   border-bottom: 1px solid rgba(49, 95, 152, 0.13);
+}
+
+.section-light-editorial {
+  background: linear-gradient(
+    180deg,
+    #f6f3ee 0%,
+    #ebe6dd 100%
+  );
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.section-light-editorial .preview-card {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.72) 0%,
+    rgba(240, 235, 225, 0.60) 100%
+  );
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
 }
 
 .section-deep,
@@ -440,9 +459,9 @@ h3 {
 
 .body {
   font-size: 1.04rem;
-  line-height: 1.82;
+  line-height: 1.9;
   max-width: 680px;
-  margin: 0 0 14px;
+  margin: 0 0 18px;
 }
 
 .body-soft   { color: var(--text-soft); }
@@ -607,9 +626,9 @@ h3 {
 }
 
 .preview-card:hover {
-  border-color: color-mix(in srgb, var(--accent) 30%, var(--line) 70%);
+  border-color: rgba(143, 168, 199, 0.50);
   box-shadow: var(--shadow-card-hover), inset 0 1px 0 rgba(255,255,255,0.55);
-  transform: translateY(-3px);
+  transform: translateY(-4px);
 }
 
 .card-number {

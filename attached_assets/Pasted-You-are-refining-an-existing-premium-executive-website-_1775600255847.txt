@@ -1,0 +1,209 @@
+You are refining an existing premium executive website.
+
+Do NOT redesign from scratch.
+Do NOT remove content.
+Do NOT simplify.
+Do NOT ask questions.
+
+Your task is to upgrade the current implementation to a top 1% executive-level visual standard.
+
+Context:
+This is a personal executive profile site focused on privacy, AI governance, and regulatory risk.
+The design direction is:
+- editorial
+- premium
+- restrained
+- intelligent
+- not sales-driven
+- not startup-like
+
+The current version is already strong (~8.8/10), but needs refinement in rhythm, depth, and visual hierarchy.
+
+--------------------------------------------------
+MAIN OBJECTIVE
+--------------------------------------------------
+
+Improve the visual system to:
+- reduce monotony
+- improve contrast between sections
+- enhance depth and atmosphere
+- refine premium feel
+- preserve elegance and restraint
+
+--------------------------------------------------
+CRITICAL FIX (MOST IMPORTANT)
+--------------------------------------------------
+
+The section with the heading:
+
+"Structured around professional depth, executive context, and regulatory judgment."
+
+MUST be changed from a blue/dark section to a LIGHT editorial section.
+
+This is essential.
+
+--------------------------------------------------
+IMPLEMENTATION DETAILS
+--------------------------------------------------
+
+1) CREATE A NEW LIGHT EDITORIAL SECTION
+
+Add a new CSS class:
+
+.section-light-editorial {
+  background: linear-gradient(
+    180deg,
+    #f6f3ee 0%,
+    #ebe6dd 100%
+  );
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+Then update the HTML:
+
+REPLACE:
+<section id="sections" class="section section-blue-soft">
+
+WITH:
+<section id="sections" class="section section-light-editorial">
+
+--------------------------------------------------
+2) REFINE CARDS IN THIS LIGHT SECTION
+
+Inside this section, update cards:
+
+.section-light-editorial .preview-card {
+  background: linear-gradient(
+    180deg,
+    rgba(255,255,255,0.7),
+    rgba(240,235,225,0.6)
+  );
+  border: 1px solid rgba(0,0,0,0.06);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+--------------------------------------------------
+3) IMPROVE GLOBAL VISUAL RHYTHM
+
+Ensure the page alternates between:
+
+- dark section
+- light section
+- deep blue section
+- light section
+
+Do NOT allow multiple dark sections in a row without visual relief.
+
+--------------------------------------------------
+4) ADD HERO GLOW (DEPTH)
+
+Enhance the hero section by adding a soft ambient glow:
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: -120px;
+  right: -80px;
+  width: 320px;
+  height: 320px;
+  background: rgba(49,95,152,0.25);
+  filter: blur(120px);
+  pointer-events: none;
+}
+
+--------------------------------------------------
+5) IMPROVE GLASS / CARD ELEMENTS (GLOBAL)
+
+Replace grey-looking cards with blue-tinted glass:
+
+.preview-card,
+.hero-panel,
+.mini-panel {
+  background: linear-gradient(
+    180deg,
+    rgba(255,255,255,0.06),
+    rgba(143,168,199,0.12)
+  );
+  border: 1px solid rgba(143,168,199,0.25);
+}
+
+--------------------------------------------------
+6) IMPROVE HEADER
+
+Make header less flat:
+
+.site-header {
+  background: linear-gradient(
+    180deg,
+    rgba(10,20,35,0.85),
+    rgba(10,20,35,0.65)
+  );
+  backdrop-filter: blur(16px);
+}
+
+--------------------------------------------------
+7) ADD SUBTLE INTERACTIONS
+
+.preview-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(143,168,199,0.5);
+  transition: all 0.25s ease;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+--------------------------------------------------
+8) IMPROVE MOBILE READABILITY
+
+.body {
+  line-height: 1.9;
+  margin-bottom: 18px;
+}
+
+.section {
+  padding: 64px 0;
+}
+
+--------------------------------------------------
+9) PRESERVE COLOR SYSTEM
+
+Keep and use these variables:
+
+--bg-main: #f6f3ee
+--bg-soft: #eeebe5
+--bg-soft-2: #e8e2d8
+--bg-deep: #1f4574
+--bg-deep-2: #16365d
+--text-main: #161616
+--text-soft: #6d675f
+--text-inverse: #f7f4ee
+--line: #d8d1c7
+--accent: #315f98
+--accent-soft: #8fa8c7
+
+Do NOT replace the blue identity.
+Do NOT switch to generic white UI.
+
+--------------------------------------------------
+10) FINAL QUALITY GOAL
+
+The final result must feel like:
+
+- Financial Times editorial design
+- McKinsey executive report
+- high-end legal advisory presence
+
+NOT:
+- SaaS landing page
+- startup product page
+- consulting sales page
+
+--------------------------------------------------
+
+Apply all changes directly in the existing codebase.
+Do not ask questions.
+Do not output explanations.
+Just implement the improvements.
