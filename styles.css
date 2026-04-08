@@ -135,6 +135,12 @@ a {
 .nav-link.active::after { width: 100%; }
 .nav-link.active { color: #ffffff; }
 
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
 .nav-actions {
   display: flex;
   align-items: center;
