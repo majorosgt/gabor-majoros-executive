@@ -1,0 +1,123 @@
+Do not redesign the site.
+
+Do not modify other pages.
+Do not change styles.css.
+Do not change script.js.
+Do not change navigation logic.
+
+Only create or update the file: profile.html
+
+This page is the Executive Profile page and must contain structured, premium editorial content.
+
+Use the existing site layout system:
+- include <div id="site-header"></div> at the top
+- include <div id="site-footer"></div> at the bottom
+- include <script src="script.js"></script>
+
+Use existing CSS classes (hero, section, preview-card, etc.)
+Do not invent new layout systems.
+
+--------------------------------------------------
+
+Create the full content of profile.html using this structure:
+
+1) HERO
+- Eyebrow: Executive Profile
+- Name: Dr. Gábor Majoros
+- Headline:
+  "Privacy, AI governance, and regulatory risk — framed through executive judgment."
+- Subline:
+  "Operating at the intersection of law, technology, and decision-making under scrutiny."
+
+- Add a side panel with:
+  EU | UK | US | Middle East
+  Regulatory engagement: CNIL · ICO · AEPD · MNB · others
+
+--------------------------------------------------
+
+2) OPENING STATEMENT (dark section)
+
+Text:
+"Most organisations do not fail on compliance.
+They fail on decisions — when those decisions are tested under scrutiny."
+
+--------------------------------------------------
+
+3) EXECUTIVE SUMMARY
+
+Short, clean:
+
+"Global privacy and AI governance leader with 15+ years of international experience across legal advisory, regulatory strategy, and executive accountability.
+
+Focused on translating complex regulatory requirements into governance structures and decisions that remain defensible under legal, operational, and reputational pressure."
+
+--------------------------------------------------
+
+4) PROFESSIONAL EXPERIENCE (cards)
+
+Create 3 cards:
+
+Deloitte Legal:
+"Built and led the Employment, Compliance & Technology practice, delivering cross-border legal advisory and leading 30+ GDPR implementation projects."
+
+Wizz Air:
+"Group Data Protection Officer across 30+ jurisdictions, responsible for privacy governance, authority-facing matters, and regulatory investigations."
+
+MSC Cruises:
+"Global Head of Privacy, AI Lead, and Group Data Protection Officer across EMEA, the Americas, and Asia, leading governance, AI compliance, and crisis response."
+
+--------------------------------------------------
+
+5) AUTHORITY & ENGAGEMENT (dark section)
+
+Include:
+
+- German, French, UK, Spanish, Italian, Maltese, Hungarian authorities
+- regulatory investigations
+- enforcement-sensitive matters
+- litigation-related contexts
+- data breach and crisis management
+
+Closing sentence:
+"Operating in environments where regulatory expectations are actively tested — not theoretically interpreted."
+
+--------------------------------------------------
+
+6) EXECUTIVE CAPABILITY (bullet list)
+
+- structural problem solving in high-risk environments
+- governance model design and implementation
+- regulatory gap identification and closure
+- decision-making under pressure
+- alignment of legal and operational priorities
+
+--------------------------------------------------
+
+7) CREDENTIALS
+
+- Doctor of Law
+- BA in European Business Law
+- CIPP/E
+- CIPM
+- ECPC-G
+
+--------------------------------------------------
+
+8) CLOSING
+
+"This profile reflects a career built around governance, accountability, and execution under pressure.
+
+Available for selected senior leadership, advisory, and board-level discussions."
+
+--------------------------------------------------
+
+IMPORTANT:
+- Keep spacing clean and readable
+- Do not create long paragraphs
+- Use existing section styles
+- Maintain premium tone
+- Do not simplify content
+- Do not add CTA buttons
+- Do not make it look like a consulting sales page
+
+Apply changes now.
