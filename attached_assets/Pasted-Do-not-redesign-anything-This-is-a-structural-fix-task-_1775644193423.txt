@@ -1,0 +1,51 @@
+Do not redesign anything.
+
+This is a structural fix task for the navigation and theme persistence.
+
+Problems to solve:
+1. The menu / header is currently not consistent across all pages.
+2. The dark/light mode toggle works only on the main page and disappears or stops working on subpages.
+3. Menu button size, padding, and spacing must remain fixed and must not visually change across pages or breakpoints.
+4. The header must be persistent and identical on all pages.
+5. The selected theme must persist across all pages using localStorage.
+
+Requirements:
+- Keep the current visual design.
+- Do not change typography.
+- Do not change colors.
+- Do not redesign layout.
+- Only fix navigation consistency and theme persistence.
+
+Implement these rules:
+
+1) Use exactly the same header structure on every page.
+2) Ensure every page includes the same:
+   - brand
+   - desktop navigation
+   - theme toggle button
+   - hamburger menu button
+   - mobile menu
+3) The theme toggle must work on every page.
+4) The theme selection must persist across page navigation using localStorage.
+5) If dark mode is selected on one page, every other page must load in dark mode automatically.
+6) If light mode is selected, every page must load in light mode automatically.
+7) Menu button size and padding must be fixed and identical on all pages.
+8) Theme toggle and hamburger button must remain circular, aligned, and equal size.
+9) Do not let any page override header spacing.
+10) Ensure active navigation highlighting works correctly on every page.
+
+Technical instructions:
+- Use shared script.js for theme persistence and menu behavior.
+- Use shared styles.css for all header sizing and spacing.
+- Do not duplicate page-specific header styles.
+- Do not use page-specific overrides for header buttons.
+- Make sure all pages use the same CSS classes for the header.
+
+Add or ensure:
+- localStorage key for theme
+- theme applied on DOMContentLoaded before page interaction
+- shared nav rendering or shared consistent header markup
+- consistent button width/height/padding in CSS
+
+Do not ask questions.
+Apply the fix directly.

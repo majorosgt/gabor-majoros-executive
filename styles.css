@@ -24,7 +24,7 @@
 }
 
 /* ─── Dark Mode ──────────────────────────────────────────────────────── */
-body.dark-mode {
+body.dark-mode, html.dark-mode {
   --bg-main:   #0d1520;
   --bg-soft:   #132030;
   --bg-soft-2: #192b40;
