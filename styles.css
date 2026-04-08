@@ -927,3 +927,64 @@ body.dark-mode .section-blue-soft {
     radial-gradient(ellipse 55% 60% at 15% 80%, rgba(122, 174, 224, 0.07) 0%, transparent 55%),
     linear-gradient(165deg, rgba(49, 95, 152, 0.10) 0%, rgba(122, 174, 224, 0.06) 100%);
 }
+
+/* ─── Dark mode: Selected Sections (section-light-editorial) ─────────── */
+body.dark-mode .section-light-editorial {
+  background:
+    radial-gradient(ellipse 70% 55% at 12% 20%, rgba(30, 68, 120, 0.45) 0%, transparent 55%),
+    radial-gradient(ellipse 50% 40% at 88% 78%, rgba(20, 50, 95, 0.30) 0%, transparent 50%),
+    linear-gradient(170deg, #0f1d30 0%, #0b1624 100%);
+  border-top: 1px solid rgba(122, 174, 224, 0.12);
+  border-bottom: 1px solid rgba(122, 174, 224, 0.12);
+}
+
+body.dark-mode .section-light-editorial h2 {
+  color: var(--text-inverse);
+}
+
+body.dark-mode .section-light-editorial .eyebrow {
+  color: rgba(168, 196, 224, 0.70);
+}
+
+body.dark-mode .section-light-editorial .preview-card {
+  background:
+    linear-gradient(148deg,
+      rgba(255, 255, 255, 0.07) 0%,
+      rgba(100, 152, 210, 0.14) 55%,
+      rgba(20, 55, 110, 0.20) 100%);
+  border: 1px solid rgba(122, 174, 224, 0.22);
+  box-shadow:
+    0 12px 40px rgba(0, 0, 0, 0.40),
+    0 2px 8px rgba(10, 30, 70, 0.30),
+    inset 0 1px 0 rgba(255, 255, 255, 0.09);
+  backdrop-filter: blur(10px);
+}
+
+body.dark-mode .section-light-editorial .preview-card::before {
+  background: linear-gradient(
+    130deg,
+    rgba(122, 174, 224, 0.14),
+    transparent 45%
+  );
+}
+
+body.dark-mode .section-light-editorial .preview-card:hover {
+  border-color: rgba(122, 174, 224, 0.38);
+  box-shadow:
+    0 20px 56px rgba(0, 0, 0, 0.52),
+    0 4px 12px rgba(10, 30, 70, 0.36),
+    inset 0 1px 0 rgba(255, 255, 255, 0.09);
+  transform: translateY(-4px);
+}
+
+body.dark-mode .section-light-editorial .preview-card h3 {
+  color: var(--text-inverse);
+}
+
+body.dark-mode .section-light-editorial .preview-card .card-number {
+  color: var(--accent-soft);
+}
+
+body.dark-mode .section-light-editorial .preview-card .body-soft {
+  color: rgba(168, 196, 224, 0.76);
+}
