@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Work — Dr. Gábor Majoros</title>
+  <meta name="description" content="Areas of focus, regulatory frameworks, supervisory authority engagement, and track record." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    .stat-row { display: grid; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: 0; margin: 48px 0 0; border: 1px solid var(--line); }
+    .stat-item { padding: 24px 22px; border-right: 1px solid var(--line); }
+    .stat-item:last-child { border-right: none; }
+    .stat-num { font-family: "Playfair Display", Georgia, serif; font-size: 2.4rem; font-weight: 500; color: var(--accent); line-height: 1; letter-spacing: -0.03em; margin: 0 0 6px; }
+    .stat-label { font-size: 0.68rem; letter-spacing: 0.16em; text-transform: uppercase; color: var(--text-soft); font-weight: 500; line-height: 1.4; }
+    .focus-area { padding: 44px 0; border-bottom: 1px solid var(--line); }
+    .focus-area:last-child { border-bottom: none; }
+    .focus-area-header { display: flex; align-items: baseline; gap: 20px; margin-bottom: 20px; }
+    .focus-num { font-size: 0.72rem; letter-spacing: 0.20em; text-transform: uppercase; color: var(--accent); opacity: 0.7; font-weight: 500; white-space: nowrap; }
+    .focus-tag { font-size: 0.68rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--text-soft); font-weight: 500; padding: 3px 10px; border: 1px solid var(--line); margin-left: auto; white-space: nowrap; }
+    .j-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); gap: 1px; background: var(--line); margin-top: 32px; border: 1px solid var(--line); }
+    .j-item { background: var(--bg-main); padding: 18px 16px; transition: background var(--transition); }
+    .j-item:hover { background: var(--bg-soft); }
+    .j-code { font-size: 0.62rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--accent); font-weight: 500; margin: 0 0 4px; opacity: 0.8; }
+    .j-name { font-family: "Playfair Display", Georgia, serif; font-size: 0.98rem; color: var(--text-main); line-height: 1.2; margin: 0; }
+    .auth-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); gap: 12px; margin-top: 28px; }
+    .auth-item { padding: 16px 14px; border: 1px solid color-mix(in srgb, var(--accent) 16%, var(--line) 84%); background: linear-gradient(148deg, rgba(255,255,255,0.50) 0%, rgba(143,168,199,0.10) 100%); box-shadow: var(--shadow-card); text-align: center; }
+    .auth-name { font-family: "Playfair Display", Georgia, serif; font-size: 1.1rem; font-weight: 500; color: var(--accent); letter-spacing: -0.01em; margin: 0 0 4px; }
+    .auth-country { font-size: 0.62rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--text-soft); font-weight: 500; margin: 0; }
+    @media (max-width: 640px) { .stat-row { grid-template-columns: 1fr 1fr; } .stat-item { border-bottom: 1px solid var(--line); } .focus-area-header { flex-wrap: wrap; } .focus-tag { margin-left: 0; } }
+  </style>
+  <script>if(localStorage.getItem('site-theme')==='dark')document.documentElement.classList.add('dark-mode');</script>
+</head>
+<body>
+  <div id="site-header"></div>
+  <main>
+    <div class="section">
+      <div class="container reveal">
+        <div class="page-title-block" style="padding-top: 40px;">
+          <p class="eyebrow">Work</p>
+          <h1 class="page-title">The evidence.</h1>
+        </div>
+        <p class="blue-italic" style="margin-top: 24px;">Fifteen years leaves a specific kind of record.</p>
+        <p class="body-lg">Not credentials. Outcomes. Frameworks still operating. Authorities engaged and answered. Organisations protected when it mattered.</p>
+        <div class="stat-row">
+          <div class="stat-item"><p class="stat-num">15+</p><p class="stat-label">Years of practice</p></div>
+          <div class="stat-item"><p class="stat-num">30+</p><p class="stat-label">GDPR implementations led</p></div>
+          <div class="stat-item"><p class="stat-num">6</p><p class="stat-label">Continents</p></div>
+          <div class="stat-item"><p class="stat-num">10+</p><p class="stat-label">Jurisdictions active</p></div>
+          <div class="stat-item"><p class="stat-num">10</p><p class="stat-label">Privacy professionals led</p></div>
+        </div>
+      </div>
+    </div>
+
+    <section class="section">
+      <div class="container reveal">
+        <p class="eyebrow">Areas of focus</p>
+        <h2>Five domains. Each tested under pressure.</h2>
+        <div class="focus-area">
+          <div class="focus-area-header"><span class="focus-num">01</span><h3 style="margin:0;">AI Governance</h3><span class="focus-tag">Flagship</span></div>
+          <p class="body">AI governance is not a technical question. It is an accountability question — and most organisations are structurally unprepared for it. The EU AI Act does not introduce new obligations so much as it reveals existing gaps: in accountability chains, in documentation, in the line of responsibility from technical teams to board level.</p>
+          <p class="body">Work in this area covers EU AI Act readiness assessment, high-risk AI system classification, governance model design, accountability and RACI framework development, and board-level oversight mechanisms. Built and implemented at an organisation operating AI systems across every major global market — including biometric processing, automated decision-making, and content moderation.</p>
+          <p class="body body-soft">The approach: AI governance designed to hold under enforcement scrutiny — not to satisfy an audit checklist.</p>
+        </div>
+        <div class="focus-area">
+          <div class="focus-area-header"><span class="focus-num">02</span><h3 style="margin:0;">Global Privacy Architecture</h3></div>
+          <p class="body">Privacy frameworks operate in tension: rigorous enough to satisfy regulators across multiple jurisdictions, yet operational enough to function inside a real organisation with competing priorities. Getting that balance right requires more than legal knowledge — it requires understanding how governance structures behave under operational pressure.</p>
+          <p class="body">Frameworks designed and implemented under GDPR, CCPA, PIPL with CAC regulatory approval in China, POPIA in South Africa, and the Privacy Act across Australia and New Zealand. Each implementation required jurisdictional adaptation, local authority engagement, and integration with existing risk and compliance functions.</p>
+          <p class="body body-soft">Privacy governance built to be defensible, not decorative — designed from the outset to withstand a supervisory audit, a data breach, or a board-level inquiry.</p>
+        </div>
+        <div class="focus-area">
+          <div class="focus-area-header"><span class="focus-num">03</span><h3 style="margin:0;">Authority Engagement & Enforcement</h3></div>
+          <p class="body">Regulatory engagement at this level is not a communication exercise. It is a strategic discipline — requiring understanding of how supervisory authorities think, what they look for, and how to present an organisation's position credibly under scrutiny.</p>
+          <p class="body">Direct supervisory authority engagement across NAIH, CNIL, ICO, AEPD, IDPC Malta, CAC, and multiple other European data protection authorities. Engagement contexts have included routine audits, enforcement proceedings, breach notifications, and proactive regulatory consultations.</p>
+          <p class="body body-soft">In addition: strategic direction of data protection litigation across EU, UK, and US jurisdictions — managing external counsel, structuring legal strategy, and positioning the organisation across proceedings where regulatory risk intersected with legal exposure.</p>
+        </div>
+        <div class="focus-area">
+          <div class="focus-area-header"><span class="focus-num">04</span><h3 style="margin:0;">Crisis & Breach Management</h3></div>
+          <p class="body">Data breaches do not follow governance frameworks. They expose the gaps in them. The quality of a privacy function is most visible not in its documentation, but in how it performs when something goes wrong — under time pressure, with incomplete information, with executives and regulators both demanding answers simultaneously.</p>
+          <p class="body">Breach response experience spanning multiple sectors and jurisdictions: notification strategy, regulatory communication, internal containment, third-party coordination, and post-incident governance remediation. Crisis management in contexts where reputational exposure, enforcement risk, and litigation potential were all in play at once.</p>
+          <p class="body body-soft">Structured response under pressure — reducing regulatory exposure while preserving organisational credibility and positioning for any subsequent enforcement review.</p>
+        </div>
+        <div class="focus-area">
+          <div class="focus-area-header"><span class="focus-num">05</span><h3 style="margin:0;">Board-Level Risk Advisory</h3></div>
+          <p class="body">Privacy and AI governance reach their strategic value when they inform board-level decision-making — not as compliance updates, but as structured risk intelligence that shapes how an organisation allocates resources, designs products, and enters new markets.</p>
+          <p class="body">Executive reporting to CEO and Executive Chairman level. Translation of regulatory complexity into decision-relevant risk framing: what is the actual exposure, what are the options, what does each option cost against what it protects.</p>
+          <p class="body body-soft">Converting regulatory complexity into executive clarity — so that the board can govern what they cannot see, and be accountable for what they do not fully understand.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-soft">
+      <div class="container reveal">
+        <p class="eyebrow">Regulatory frameworks implemented</p>
+        <h2>Global reach. Local precision.</h2>
+        <p class="body body-soft">Privacy frameworks designed, implemented, and operationalised across the following jurisdictions and regulatory regimes — spanning six continents and every major data protection regime in force.</p>
+        <div class="j-grid">
+          <div class="j-item"><p class="j-code">EU</p><p class="j-name">GDPR</p></div>
+          <div class="j-item"><p class="j-code">UK</p><p class="j-name">UK GDPR</p></div>
+          <div class="j-item"><p class="j-code">US</p><p class="j-name">CCPA &amp; State Laws</p></div>
+          <div class="j-item"><p class="j-code">CN</p><p class="j-name">PIPL · CAC Approved</p></div>
+          <div class="j-item"><p class="j-code">ZA</p><p class="j-name">POPIA</p></div>
+          <div class="j-item"><p class="j-code">AU</p><p class="j-name">Privacy Act</p></div>
+          <div class="j-item"><p class="j-code">NZ</p><p class="j-name">Privacy Act</p></div>
+          <div class="j-item"><p class="j-code">UAE</p><p class="j-name">PDPL</p></div>
+          <div class="j-item"><p class="j-code">BR</p><p class="j-name">LGPD</p></div>
+          <div class="j-item"><p class="j-code">CA</p><p class="j-name">PIPEDA · Law 25</p></div>
+          <div class="j-item"><p class="j-code">CH</p><p class="j-name">revDSG</p></div>
+          <div class="j-item"><p class="j-code">EU</p><p class="j-name">AI Act</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-blue-soft">
+      <div class="container reveal">
+        <p class="eyebrow">Supervisory authority engagement</p>
+        <h2>Direct. Enforcement-facing. Resolved.</h2>
+        <p class="body">Engagement contexts have included enforcement proceedings, supervisory audits, breach notifications, and proactive regulatory consultations — across the following authorities.</p>
+        <div class="auth-grid">
+          <div class="auth-item"><p class="auth-name">NAIH</p><p class="auth-country">Hungary</p></div>
+          <div class="auth-item"><p class="auth-name">CNIL</p><p class="auth-country">France</p></div>
+          <div class="auth-item"><p class="auth-name">ICO</p><p class="auth-country">United Kingdom</p></div>
+          <div class="auth-item"><p class="auth-name">AEPD</p><p class="auth-country">Spain</p></div>
+          <div class="auth-item"><p class="auth-name">IDPC</p><p class="auth-country">Malta</p></div>
+          <div class="auth-item"><p class="auth-name">CAC</p><p class="auth-country">China</p></div>
+          <div class="auth-item"><p class="auth-name">EDPB</p><p class="auth-country">EU</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container reveal">
+        <div class="blue-divider"></div>
+        <p class="eyebrow">Litigation & enforcement strategy</p>
+        <h2>When regulation becomes a legal matter.</h2>
+        <p class="body-lg">Strategic direction of data protection litigation across EU, UK, and US jurisdictions.</p>
+        <p class="body">Not direct court representation — but the authority and accountability that matters in practice: managing external counsel, structuring the legal strategy, and directing the organisation's position across proceedings where regulatory risk, enforcement exposure, and reputational consequence intersected simultaneously.</p>
+        <p class="body body-soft">Case contexts have spanned individual enforcement claims, regulatory investigations with litigation potential, and multi-jurisdictional proceedings requiring coordinated legal strategy across different legal systems.</p>
+      </div>
+    </section>
+  </main>
+  <div id="site-footer"></div>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Profile — Dr. Gábor Majoros</title>
+  <meta name="description" content="Professional background across consulting, legal advisory, and executive leadership in privacy and AI governance." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    .timeline { margin-top: 56px; display: grid; gap: 0; }
+    .timeline-item { padding: 40px 0 40px 32px; border-left: 1px solid var(--line); position: relative; margin-left: 8px; }
+    .timeline-item::before { content: ''; position: absolute; left: -5px; top: 46px; width: 9px; height: 9px; border-radius: 50%; background: var(--accent); opacity: 0.7; }
+    .timeline-item:last-child { border-left: 1px solid transparent; }
+    .timeline-period { font-size: 0.72rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--accent); font-weight: 500; margin: 0 0 8px; opacity: 0.85; }
+    .timeline-org { font-family: "Playfair Display", Georgia, serif; font-size: clamp(1.4rem, 2.8vw, 1.9rem); font-weight: 500; letter-spacing: -0.02em; color: var(--text-main); margin: 0 0 4px; line-height: 1.15; }
+    .timeline-role { font-size: 0.75rem; letter-spacing: 0.16em; text-transform: uppercase; color: var(--text-soft); font-weight: 500; margin: 0 0 20px; }
+    .credentials-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 32px; }
+    .credential-item { padding: 20px 22px; border: 1px solid color-mix(in srgb, var(--accent) 14%, var(--line) 86%); background: linear-gradient(148deg, rgba(255,255,255,0.50) 0%, rgba(143,168,199,0.10) 100%); box-shadow: var(--shadow-card); }
+    .credential-label { font-size: 0.68rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--text-soft); font-weight: 500; margin: 0 0 6px; }
+    .credential-value { font-family: "Playfair Display", Georgia, serif; font-size: 1rem; color: var(--text-main); line-height: 1.3; margin: 0; }
+    @media (max-width: 640px) { .credentials-grid { grid-template-columns: 1fr; } .timeline-item { padding: 32px 0 32px 24px; } }
+  </style>
+  <script>if(localStorage.getItem('site-theme')==='dark')document.documentElement.classList.add('dark-mode');</script>
+</head>
+<body>
+  <div id="site-header"></div>
+  <main>
+    <div class="section">
+      <div class="container reveal">
+        <div class="page-title-block" style="padding-top: 40px;">
+          <p class="eyebrow">Profile</p>
+          <h1 class="page-title">The arc.</h1>
+        </div>
+        <p class="blue-italic" style="margin-top: 24px;">From advisory to authority. From counsel to accountability.</p>
+        <p class="body-lg">Careers in governance are rarely linear. The ones that matter are built through accumulation — of responsibility, of pressure, of decisions that carried real consequences.</p>
+        <p class="body body-soft">What follows is not a chronology. It is a record of how expertise compounds — and what that looks like at the point where law, technology, and executive accountability converge.</p>
+      </div>
+    </div>
+
+    <section class="section section-soft">
+      <div class="container reveal">
+        <p class="eyebrow">The journey</p>
+        <h2>Three chapters. One consistent direction.</h2>
+        <div class="timeline">
+          <div class="timeline-item">
+            <p class="timeline-period">2011 – 2019 · Eight years</p>
+            <p class="timeline-org">Deloitte Legal</p>
+            <p class="timeline-role">Managing Associate · Head of Employment, Compliance & Technology</p>
+            <p class="body">It began in advisory — but not as a follower of frameworks. The Employment, Compliance and Technology practice group did not exist before. It was built: the methodology, the client relationships, the team, the market-facing identity in data privacy and compliance.</p>
+            <p class="body">Over eight years, the practice advised major multinational clients across technology, finance, healthcare, and retail. More than thirty GDPR implementation projects led directly — each one a different organisation, a different risk profile, a different set of trade-offs between regulatory obligation and operational reality.</p>
+            <p class="body body-soft">This period established something that cannot be learned from a single mandate: the ability to structure a governance function from first principles — and to know what holds under pressure, because it was tested across the full range of real client environments.</p>
+          </div>
+          <div class="timeline-item">
+            <p class="timeline-period">2019 – 2022 · Three years</p>
+            <p class="timeline-org">Banking & Aviation</p>
+            <p class="timeline-role">Group Data Protection Officer</p>
+            <p class="body">The move in-house was deliberate. Advisory expertise creates frameworks. Executive accountability tests them.</p>
+            <p class="body">In banking — Hungary's largest banking group, thirty-plus subsidiaries across finance and fintech — the work meant designing and directing a privacy governance model under financial regulation overlay, conducting supervisory audits, managing breach investigations, and liaising directly with the national banking authority.</p>
+            <p class="body">In aviation — one of Europe's fastest-growing airlines at the time — the mandate expanded geographically and in operational complexity. Thirty-plus countries. EEA, UK, UAE, third-country transfers. The first group-wide privacy framework for the airline, built and operationalised. Regulatory engagements, enforcement proceedings, and direct representation before data protection authorities across multiple jurisdictions.</p>
+            <p class="body body-soft">This period established the capacity to operate at executive level, under enforcement pressure, in organisations where privacy failure carries direct legal and reputational consequence.</p>
+          </div>
+          <div class="timeline-item">
+            <p class="timeline-period">2022 – Present</p>
+            <p class="timeline-org">Global Cruise Industry</p>
+            <p class="timeline-role">Global Head of Privacy · AI Lead · Group Data Protection Officer</p>
+            <p class="body">The current mandate operates at a different scale. One of the world's largest private companies — global operations spanning EMEA, the Americas, and Asia. The privacy and AI compliance function was built from the ground up: governance model, global Privacy Champion network, privacy-by-design integration across the entire organisation, and alignment with ESG, cybersecurity, and ethics programs.</p>
+            <p class="body">Direct reporting line to the CEO and Executive Chairman. Leading a cross-functional team of ten privacy professionals across three continents. Managing the privacy program budget. Serving as primary interface with supervisory authorities across multiple jurisdictions — including enforcement-facing engagements, authority audits, and breach notification processes on six continents.</p>
+            <p class="body">In parallel: building the AI governance function. EU AI Act implementation, high-risk AI system classification, accountability structure design, and board-level oversight frameworks — at an organisation that operates AI systems across every major market it serves.</p>
+            <p class="body body-soft">This is Chief Privacy Officer-level operating scope. Across a genuinely global organisation. At the intersection of privacy, AI governance, and executive accountability.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container reveal">
+        <div class="blue-divider"></div>
+        <p class="eyebrow">Credentials & memberships</p>
+        <h2>The foundation.</h2>
+        <p class="body body-soft">Academic and professional credentials spanning law, privacy, and AI governance — built across two decades of practice.</p>
+        <div class="credentials-grid">
+          <div class="credential-item">
+            <p class="credential-label">Certification</p>
+            <p class="credential-value">CIPP/E · CIPM<br><span style="font-size:0.88rem; color: var(--text-soft);">IAPP Certified</span></p>
+          </div>
+          <div class="credential-item">
+            <p class="credential-label">Certification</p>
+            <p class="credential-value">ECPC-G<br><span style="font-size:0.88rem; color: var(--text-soft);">Maastricht University</span></p>
+          </div>
+          <div class="credential-item">
+            <p class="credential-label">Education</p>
+            <p class="credential-value">Law Degree (JD)<br><span style="font-size:0.88rem; color: var(--text-soft);">Pázmány Péter Catholic University</span></p>
+          </div>
+          <div class="credential-item">
+            <p class="credential-label">Education</p>
+            <p class="credential-value">BA European Business Law<br><span style="font-size:0.88rem; color: var(--text-soft);">University of Abertay Dundee, Scotland</span></p>
+          </div>
+          <div class="credential-item">
+            <p class="credential-label">In progress</p>
+            <p class="credential-value">PG Diploma, Privacy & Security Law<br><span style="font-size:0.88rem; color: var(--text-soft);">Eötvös Loránd University</span></p>
+          </div>
+          <div class="credential-item">
+            <p class="credential-label">Languages</p>
+            <p class="credential-value">Hungarian · English (C2) · French (B2)</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-blue-soft">
+      <div class="container reveal">
+        <p class="eyebrow">Professional memberships</p>
+        <h2>Beyond the mandate.</h2>
+        <p class="body">Active participation in the international privacy and AI governance community — as co-chair, contributor, and delegate.</p>
+        <ul class="list-clean" style="margin-top: 8px;">
+          <li class="body">Co-Chair, OneTrust PrivacyConnect Budapest Chapter</li>
+          <li class="body">External Contributor, EU AI Alliance — Regulatory Group</li>
+          <li class="body">Member, Hungarian Corporate Compliance Society</li>
+          <li class="body">Former Delegate, Hungarian AI Coalition — Ethics & Regulation</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+  <div id="site-footer"></div>
+  <script src="script.js"></script>
+</body>
+</html>
