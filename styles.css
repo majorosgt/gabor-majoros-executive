@@ -1,6 +1,6 @@
 /* ─── Design Tokens ──────────────────────────────────────────────────── */
 :root {
-  --bg-main:   #f8f8f6;
+  --bg-main:   #fafafa;
   --bg-soft:   #f2f2f0;
   --bg-soft-2: #eaeae7;
   --bg-deep:   #1f4574;
@@ -53,7 +53,7 @@ body { padding-top: 64px;
   background:
     radial-gradient(ellipse 60% 40% at 12% 18%, rgba(49, 95, 152, 0.10) 0%, transparent 60%),
     radial-gradient(ellipse 50% 30% at 88% 8%,  rgba(31, 69, 116, 0.07) 0%, transparent 55%),
-    linear-gradient(175deg, var(--bg-main) 0%, color-mix(in srgb, var(--bg-main) 90%, #e0dcd5 10%) 100%);
+    linear-gradient(175deg, var(--bg-main) 0%, var(--bg-main) 100%);
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
   transition: background 0.4s ease, color 0.4s ease;
